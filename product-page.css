@@ -1,0 +1,55 @@
+.body-container {
+  padding: 20px 50px;
+}
+
+.breadcrumb {
+  margin-left: 190px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+
+.column-pics-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column-pics-size {
+  width: 90px;
+  height: auto;
+}
+
+.pic-group {
+  display: flex;
+  gap: 50px;
+}
+
+.all-wrap {
+  display: flex;
+  gap: 50px;
+}
+
+.front-pic {
+  max-width: 350px;
+  height: auto;
+}
+
+.product-title {
+  font-family: bodoni-urw, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.middle-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
