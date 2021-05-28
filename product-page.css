@@ -51,5 +51,49 @@
 .product-price {
   font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
+  margin: 20px 0px;
+}
+
+.product-size-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.product-size-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.productinfo {
+  font-family: bodoni-urw, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  margin: 10px 0px;
+}
+
+.right-wrap {
+}
+
+.productinfo-right {
+  font-family: bodoni-urw, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
   margin: 0;
+}
+
+.product-infotext {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
 }
