@@ -47,11 +47,32 @@
   display: flex;
   flex-direction: column;
 }
-
+/* 
 .product-price {
   font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
   margin: 20px 0px;
+} */
+
+.product-sale-wrap {
+  display: flex;
+  margin: 20px 0px;
+  gap: 10px;
+}
+
+.product-price-sale {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  text-decoration-color: #b42525;
+  margin: 0;
+}
+
+.product-newprice {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  color: #b42525;
+  margin: 0;
 }
 
 .product-size-wrap {
@@ -73,6 +94,35 @@
   margin-bottom: 10px;
 }
 
+.product-size-btn-outofstock {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: rgb(182, 182, 182);
+}
+
+.product-size-btn-selected {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  /* background-color: #b0acc3; */
+}
+
 .productinfo {
   font-family: bodoni-urw, serif;
   font-weight: 300;
@@ -80,9 +130,6 @@
   font-size: 1.3rem;
   letter-spacing: 0.05em;
   margin: 10px 0px;
-}
-
-.right-wrap {
 }
 
 .productinfo-right {
@@ -96,4 +143,36 @@
 .product-infotext {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
+}
+
+.unique-text-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 30px;
+}
+
+.unique-text {
+  font-family: bodoni-urw, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.suggestion-pic-wrap {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.suggestion-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 480px) {
 }
