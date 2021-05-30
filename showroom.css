@@ -48,13 +48,16 @@ p {
 }
 
 .theForm input {
+  border-radius: 5px;
+  border: 1px solid #B0ACC3;
   font-family: 'Quicksand', sans-serif;
-  width: 18vw;
-  height: 2vw;
-  margin-bottom: 1vw;
-  border-color: #b0acc3;
-  border-style: solid;
-}
+  font-size: 1rem;
+  width: 20vw;
+  padding: 10px;
+  box-shadow: 0;
+  color: white;
+  margin-bottom: 15px;
+  }
 
 .theForm label {
   margin-bottom: 0.5vw;
@@ -66,15 +69,17 @@ p {
 }
 
 .theForm button {
+  border-radius: 5px;
+  background: #B0ACC3;
+  border: 1px solid #B0ACC3;
+  padding: 15px;
   font-family: 'Quicksand', sans-serif;
-  background-color: #b0acc3;
-  border-style: solid;
-  border-color: #b0acc3;
+  font-size: 1rem;
+  width: 15vw;
+  padding: 10px;
+  box-shadow: 0;
   color: white;
-  box-shadow: none;
-  width: 12vw;
-  height: 2.8vw;
-}
+  }
 
 .theForm button:hover {
   cursor: pointer;
@@ -133,7 +138,7 @@ th, td {
   text-align-last: center;
 }
 
-td:hover {
+td:hover, td:active, td:visited {
   background-color: #B0ACC3;
 }
 
