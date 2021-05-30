@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The shop all page with all products</title>
+    <link rel="stylesheet" href="showroom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav-placeholder"></div>
+    </header>
+    <main>
+      <h3>SHOWROOM</h3>
+      <section class="three_column">
+          <img src="img/showroom_pic1.webp" alt="The picture of leve. showroom." id="firstPic"></img>
+          <div class="intro"><p>Over the past month, we have worked hard to get a showroom stacked up for you.
+        </p>
+    <p>We have now become part of a combined content and showroom, which is a universe where senses, scents and expressions are created. Exclusive and bold Danish brands are presented here, everything from clothes, accessories, beauty products etc.
+    </p>
+<p>Explore an experimental and unique universe where our brand ‘leve.’s collections can be seen, touched and tried on. </p>
+</div>
+<img src="img/showroom_pic2.webp" alt="The picture of leve. showroom." id="secondPic"></img>
+      </section>
+      <h3>MAKE AN APPOINTMENT</h3>
+      <section id="appointment" class="three_column">
+          <div class="calendar"></div>
+          <form autocomplete="on" method="POST" data-netlify="true" class="theForm">
+                <label for="name">NAME</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="First and lastname"
+                  required
+                />
+      
+                <label for="email">EMAIL</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="abcdefg@gmail.com"
+                  required
+                />
+      
+                <label for="tel_number">TEL NO.</label>
+                <input
+                  id="tel_number"
+                  type="text"
+                  name="tel_number"
+                  placeholder="+45 xx xx xx xx"
+                  required
+                />
+      
+                <button class="book_btn">book time</button>
+          </form>
+          <div><p>
+            We are thrilled to meet you in our showroom!
+          </p>
+        <p>For us to provide the best experience for you, please fill out this form to book an appointment.</p>
+        <p>We will gladly send you time and place reminder if you would like us to.</p></div>
+      </section>
+      <h3>FIND US HERE</h3>
+      <section class="two_column">
+          <a href=""><img src="img/map_pic.webp" alt="The Google Maps image for leve. showroom." id="map_pic" ></img></a>
+          <div><p>ADDRESS:<br>Store Kongensgade 95<br>1264 Copenhagen K
+            </p><br>
+        <p>PHONE:<br>+45 26 11 05 11
+            </p><br>
+        <p>OPENING HOURS:<br>Monday To Friday<br>9:00 to 16:30</p></div>
+      </section>
+    </main>
+    <script src="showroom.js"></script>
+  </body>
+</html>

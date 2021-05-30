@@ -1,12 +1,11 @@
-fetch(
-  'https://kea21s-6eb0.restdb.io/rest/leve-products?q={"$and" : [{"$or": [{"category": "blazers"}, {"category": "shirts"}]}, {"$or": [{"color": "mint"}, {"color": "white"}]} ]}',
-  {
-    method: "GET",
-    headers: {
-      "x-apikey": "606d606af55350043100752e",
-    },
-  }
-)
+const URL =
+  'https://kea21s-6eb0.restdb.io/rest/leve-products?q={"$and" : [{"$or": [{"category": "blazers"}, {"category": "pants"}]}, {"$or": [{"color": "mint"}, {"color": "navy blue"}]} ]}';
+fetch(URL, {
+  method: "GET",
+  headers: {
+    "x-apikey": "606d606af55350043100752e",
+  },
+})
   .then((res) => res.json())
   .then((data) => {
     listProducts(data);

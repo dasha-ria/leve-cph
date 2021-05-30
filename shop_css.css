@@ -62,10 +62,6 @@ label {
   cursor: pointer;
 }
 
-input {
-  background-color: red;
-}
-
 #sort_price,
 #collection,
 #category,
@@ -99,21 +95,6 @@ article {
 .underline {
   text-decoration-line: line-through;
   opacity: 50%;
-}
-
-.sorting {
-  cursor: pointer;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 0.5vw;
-  padding-bottom: 0.5vw;
-  box-shadow: none;
-}
-
-.sorting:hover {
-  background-color: #aed5b2;
-  border-color: #aed5b2;
-  margin: max-content max-content max-content max-content;
 }
 
 .no_border {
