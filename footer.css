@@ -34,16 +34,24 @@ footer {
   font-size: 1rem;
   margin-top: 35px;
   margin-bottom: 8px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  font-size: 1.1rem;
 }
 
 .footer-link {
   text-decoration: none;
   color: black;
   margin-top: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
 }
 
 .footer-link:hover {
-  color: rgb(122, 122, 122);
+  color: #b0acc3;
 }
 
 .footer-pic {
@@ -63,6 +71,32 @@ footer {
   width: auto;
 }
 
+.leve-footer {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  color: #b0acc3;
+  margin: 20px 0px;
+}
+
 .address-footer {
   text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
 }
+
+.footer-contact-link {
+  color: #696383;
+}
+
+/* font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05rem; */
