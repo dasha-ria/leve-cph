@@ -116,3 +116,28 @@ p {
 #appointment p {
   max-width: 40vw;
 }
+
+table {
+  border: none;
+  background-color: #F2F2F2;
+}
+
+th {
+  background-color: #b0acc380;
+  font-weight: 300;
+}
+
+th, td {
+  border: none;
+  padding: 10px;
+  text-align-last: center;
+}
+
+td:hover {
+  background-color: #B0ACC3;
+}
+
+.month_name {
+  background-color: #B0ACC3;
+  
+}
