@@ -98,5 +98,11 @@
       </section>
     </main>
     <script src="shop_script.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+      <script>
+      $.get("navigation.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
   </body>
 </html>

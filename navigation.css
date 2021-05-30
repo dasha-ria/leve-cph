@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
 .ham {
     display: none;
 }
@@ -67,6 +69,7 @@ text-transform: uppercase;
 margin: 75px 150px 0 0;
 padding-bottom: 5px;
 display: inline-flex;
+justify-content: space-evenly;
 }
   
 nav a, nav ul {
