@@ -129,6 +129,39 @@ footer {
   }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1000px) {
+  .category-flex {
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+  }
+
+  .footer-category {
+    width: calc(30% - 15px);
+  }
+
+  .footer-link {
+    font-size: 1.1rem;
+    margin: 5px 0 5px 0;
+  }
+
+  .footer-social {
+    width: 35px;
+    height: auto;
+  }
+
+  .footer-pay {
+    width: 25px;
+    height: auto;
+  }
+
+  .footer-pic {
+    gap: 15px;
+  }
+}
+
 /* font-family: "Quicksand", sans-serif;
   font-size: 1rem;
 
