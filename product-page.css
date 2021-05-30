@@ -31,15 +31,22 @@
 
 .front-pic {
   max-width: 350px;
-  height: auto;
+  height: 562px;
+  object-fit: cover;
 }
 
 .product-title {
-  font-family: bodoni-urw, serif;
+  /* font-family: bodoni-urw, serif;
   font-weight: 300;
   font-style: normal;
   font-size: 2.5rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05em; */
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -124,19 +131,22 @@
 }
 
 .productinfo {
-  font-family: bodoni-urw, serif;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
   font-weight: 300;
   font-style: normal;
+  letter-spacing: 0.05rem;
   font-size: 1.3rem;
-  letter-spacing: 0.05em;
   margin: 10px 0px;
 }
 
 .productinfo-right {
-  font-family: bodoni-urw, serif;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.8rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.6rem;
   margin: 0;
 }
 
@@ -154,9 +164,11 @@
 }
 
 .unique-text {
-  font-family: bodoni-urw, serif;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
   font-weight: 300;
   font-style: normal;
+  letter-spacing: 0.05rem;
   font-size: 2rem;
   letter-spacing: 0.05em;
   margin: 0;
