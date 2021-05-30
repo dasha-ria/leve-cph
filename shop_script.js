@@ -1,5 +1,5 @@
 fetch(
-  "https://kea21s-6eb0.restdb.io/rest/leve-products?q={}&filter=blazers", //if you put ?q={"category": "blazers"} instead of ?q={}&filter... the code turns red //
+  'https://kea21s-6eb0.restdb.io/rest/leve-products?q={"$and" : [{"$or": [{"category": "blazers"}, {"category": "shirts"}]}, {"$or": [{"color": "mint"}, {"color": "white"}]} ]}',
   {
     method: "GET",
     headers: {

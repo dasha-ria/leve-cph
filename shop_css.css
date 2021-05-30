@@ -170,6 +170,7 @@ article img {
   background-color: white;
   border-color: #b0acc3;
   border-width: 2px;
+  border-style: solid;
   width: 1.8vw;
   height: 1.8vw;
   border-radius: 41%;
