@@ -8,6 +8,11 @@ footer {
   align-items: center;
 }
 
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-line {
   display: flex;
   justify-content: center;
@@ -20,7 +25,7 @@ footer {
 .category-flex {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 80px;
 }
 
@@ -31,7 +36,6 @@ footer {
 
 .footer-title {
   font-weight: 400;
-  font-size: 1rem;
   margin-top: 35px;
   margin-bottom: 8px;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
@@ -90,6 +94,35 @@ footer {
 
 .footer-contact-link {
   color: #696383;
+}
+
+@media only screen and (max-width: 480px) {
+  .category-flex {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .footer-link {
+    font-size: 1.2rem;
+    margin: 5px 0 5px 0;
+  }
+
+  .footer-social {
+    width: 45px;
+    height: auto;
+  }
+
+  .footer-pay {
+    width: 30px;
+    height: auto;
+  }
+
+  .footer-pic {
+    gap: 20px;
+  }
 }
 
 /* font-family: "Quicksand", sans-serif;
