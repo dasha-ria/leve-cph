@@ -1,9 +1,12 @@
-fetch("https://kea21s-6eb0.restdb.io/rest/leve-products?q={}&filter=blazers", {
-  method: "GET",
-  headers: {
-    "x-apikey": "606d606af55350043100752e",
-  },
-})
+fetch(
+  "https://kea21s-6eb0.restdb.io/rest/leve-products?q={}&filter=blazers", //if you put ?q={"category": "blazers"} instead of ?q={}&filter... the code turns red //
+  {
+    method: "GET",
+    headers: {
+      "x-apikey": "606d606af55350043100752e",
+    },
+  }
+)
   .then((res) => res.json())
   .then((data) => {
     listProducts(data);
