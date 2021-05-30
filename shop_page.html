@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The shop all page with all products</title>
+    <link rel="stylesheet" href="shop_css.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav-placeholder"></div>
+    </header>
+    <main>
+      <h3>SHOP</h3>
+      <section class="instead">
+        <div class="filter">
+          <h4>
+            sort price
+            <span id="filter1">+</span>
+          </h4>
+          <div class="sort_price disappear">
+            <span id="sort_price">
+              <label> <button id="low" class="btn_filter"> </button> Low to High</label>
+              <label> <button id="high" class="btn_filter"> </button> High to Low</label>
+          </div>
+          <h4>
+            collection
+            <span id="filter2">+</span>
+          </h4>
+          <div class="collection disappear">
+            <span id="collection">
+              <label> <button id="mint" class="btn_filter"> </button> The Mint</label>
+              <label> <button id="pink" class="btn_filter"> </button> The Pink</label>
+              <label> <button id="sea" class="btn_filter"> </button> The Sea</label>
+              <label> <button id="sky" class="btn_filter"> </button> The Sky</label>
+              <label> <button id="daisy" class="btn_filter"> </button> Daisy</label>
+              <label> <button id="espresso" class="btn_filter"> </button> Espresso</label>
+              <label> <button id="mocha" class="btn_filter"> </button> Mocha</label>
+            </span>
+          </div>
+          <h4>
+            category
+            <span id="filter3">+</span>
+          </h4>
+          <div class="category disappear">
+            <span id="category">
+                <label> <button id="blazers" class="btn_filter"> </button> Blazers</label>
+                <label> <button id="pants" class="btn_filter"> </button> Pants</label>
+                <label> <button id="shirts" class="btn_filter"> </button> Shirts</label>
+                <label> <button id="vests" class="btn_filter"> </button> Vests</label>
+                <label> <button id="skirts" class="btn_filter"> </button> Skirts</label>
+                <label> <button id="trenchcoats" class="btn_filter"> </button> Trenchcoats</label>
+                <label> <button id="shorts" class="btn_filter"> </button> Shorts</label>
+                <label> <button id="dresses" class="btn_filter"> </button> Dresses</label>
+            </span>
+          </div>
+          <h4>
+            size
+            <span id="filter4">+</span>
+          </h4>
+          <div class="size disappear">
+            <span id="sizes">
+                <label> <button id="XXS" class="btn_filter"> </button> XXS</label>
+                <label> <button id="XS" class="btn_filter"> </button> XS</label>
+                <label> <button id="S" class="btn_filter"> </button> S</label>
+                <label> <button id="M" class="btn_filter"> </button> M</label>
+                <label> <button id="L" class="btn_filter"> </button> L</label>
+            </span>
+          </div>
+        </div>
+          <div class="list">
+            <template id="theList">
+              <article>
+                <a href="product-page.html">
+                  <img src="images/Siri_recycled_blue-front.webp" />
+                </a>
+                <lebel class="disappear"><span class="row_show">
+                    <div id="box_XXS" class="boxy">XXS</div>
+                    <div id="box_XS" class="boxy">XS</div>
+                    <div id="box_S" class="boxy">S</div>
+                    <div id="box_M" class="boxy">M</div>
+                    <div id="box_L" class="boxy">L</div>
+                </span></lebel>
+                <h4 class="name">ULRIKKE</h4>
+                <p>
+                <span class="price">399</span>
+                <span class="discount"> </span>
+                </p>
+              </article>
+            </template>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="shop_script.js"></script>
+  </body>
+</html>
