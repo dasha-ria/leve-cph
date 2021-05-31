@@ -105,7 +105,6 @@ nav li:hover {
 
 .search {
   background-image: url(img/search.png);
-  background-size: 100%;
 }
 
 .search:hover {
@@ -114,7 +113,6 @@ nav li:hover {
 }
 
 .shop_bag {
-  background-size: 100%;
   background-image: url(img/shopping-bag.png);
 }
 
@@ -125,13 +123,13 @@ nav li:hover {
 
 .user_account {
   background-image: url(img/user.png);
-
-  background-size: 100%;
 }
 
 .icon {
   width: 30px;
   height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .user_account:hover {
