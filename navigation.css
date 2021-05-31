@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 
 .ham {
-    display: none;
+  display: none;
 }
 
 .hidden {
-    visibility: hidden;
-    opacity: 0%;
+  visibility: hidden;
+  opacity: 0%;
 }
 
 /*
@@ -14,68 +14,76 @@
  * ANNOUNCEMENT BAR
  * ----------------------------------------------------------------------------
  */
- .AnnouncementBar {
-font-family: 'Quicksand', sans-serif;
-position: relative;
-text-align: center;
-font-size: 1.25rem;
-letter-spacing: 0.1em;
-z-index: 1;
-background-color: #B0ACC3;
-color: white;
+.AnnouncementBar {
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  background-color: #b0acc3;
+  color: white;
 }
 
 .AnnouncementBar__Wrapper {
-padding: 12px 15px;
+  padding: 12px 15px;
 }
 
 .AnnouncementBar__Content {
-color: inherit;
-margin: 0;
-}
+  color: inherit;
+  margin: 0;
+} */
 
-/*
+/* 
  * ----------------------------------------------------------------------------
  * NAV
  * ----------------------------------------------------------------------------
  */
+ 
  nav {
-font-family: 'Quicksand', sans-serif;
-margin: 0;
-max-width: 100%;
-height: 175px;
-background-size: cover;
-border: 1px solid #B0ACC3;
-z-index: 2;
-background-color: white;
-}
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  max-width: 100%;
+  height: 175px;
+  background-size: cover;
+  border: 1px solid #b0acc3;
+  z-index: 2;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} 
 
 .logo {
-font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
-font-size: 5rem; 
-position: absolute;
-left: 45%;
+  displa
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-size: 5rem;
+  left: 45%;
 }
 
 .logo:hover {
-  color: #B0ACC3;
+  color: #b0acc3;
   transition: transform 0.2s ease;
 }
 
-nav li {
-font-size: 1.5rem;
-letter-spacing: 0.12em;
-text-transform: uppercase;
-margin: 75px 150px 0 0;
-padding-bottom: 5px;
-display: inline-flex;
-justify-content: space-evenly;
+nav ul {
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 75px 0px 0 0;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
 }
-  
-nav a, nav ul {
-list-style: none;
-text-decoration: none;
-color: black;
+
+nav a,
+nav ul {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 .switch_language {
@@ -83,20 +91,21 @@ color: black;
 }
 
 .language {
-color: black;
-font-size: 1.25rem;
-float: left;
-padding: 25px 10px 5px 10px;
+  color: black;
+  font-size: 1.25rem;
+  float: left;
+  padding: 25px 10px 5px 10px;
 }
-  
-.language:hover, nav li:hover {
-border-bottom: 2px solid #B0ACC3;
+
+.language:hover,
+nav li:hover {
+  border-bottom: 2px solid #b0acc3;
 }
 
 .shop_text {
   color: black;
   font-size: 1.2rem;
-  position: absolute;
+
   top: 70px;
   left: 81vw;
   text-align: left;
@@ -104,7 +113,7 @@ border-bottom: 2px solid #B0ACC3;
 
 .search {
   background-image: url(img/search.png);
-  position: absolute;
+
   top: 0;
   left: 73vw;
 }
@@ -116,7 +125,6 @@ border-bottom: 2px solid #B0ACC3;
 
 .shop_bag {
   background-image: url(img/shopping-bag.png);
-  position: absolute;
   top: 0;
   left: 78vw;
 }
@@ -128,7 +136,6 @@ border-bottom: 2px solid #B0ACC3;
 
 .user_account {
   background-image: url(img/user.png);
-  position: absolute;
   top: 0;
   left: 90vw;
 }
@@ -146,4 +153,84 @@ border-bottom: 2px solid #B0ACC3;
   background-repeat: no-repeat;
   background-size: 100%;
 }
+/* 
 
+
+
+-----------DAria
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-size: 5rem;
+}
+
+.logo:hover {
+  color: #b0acc3;
+  transition: transform 0.2s ease;
+}
+
+nav a,
+nav ul {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+nav li {
+}
+
+.search {
+  background-image: url(img/search.png);
+}
+
+.search:hover {
+  background-image: url(img/search-hover.png);
+  transition: transform 0.2s ease;
+}
+
+.shop_bag {
+  border: 1px solid red;
+  width: 50px;
+  height: 50px;
+  background-image: url(img/shopping-bag.png);
+}
+
+.shop_bag:hover {
+  background-image: url(img/shopping-bag-hover.png);
+  transition: transform 0.2s ease;
+}
+
+.user_account {
+  background-image: url(img/user.png);
+}
+
+.user_account:hover {
+  background-image: url(img/user-hover.png);
+  transition: transform 0.2s ease;
+} */
+
+/* .icon {
+  background-position: center;
+  min-width: 2vw;
+  max-width: 40px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+} */
