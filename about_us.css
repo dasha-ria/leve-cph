@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.headlines {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 0.07em;
+  text-align: center;
+  font-style: normal;
+  font-size: 3vw;
+  grid-area: text;
+  margin-right: 5vw;
+  text-transform: uppercase;
+}
+
+.two_column {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  column-gap: 10vw;
+}
+
+.pic_section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vw;
+}
+
+.intro_section {
+  max-width: 35vw;
+}
+
+.intro_section p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4vw;
+  -webkit-text-stroke: #707070;
+  letter-spacing: 2px;
+  margin-bottom: 3vw;
+}
+
+#first_img,
+#second_img,
+#third_img {
+  width: 19vw;
+  height: auto;
+}
+
+#first_img {
+  margin-left: -10vw;
+}
+
+#second_img {
+  position: relative;
+  z-index: 100;
+  top: -13vw;
+  left: 4vw;
+}
+
+#third_img {
+  position: relative;
+  left: 12vw;
+  top: -16vw;
+}
+
+.signature {
+  text-align: left;
+  margin-top: -3.5vw;
+  margin-left: 7vw;
+  margin-right: auto;
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.07em;
+  font-style: normal;
+  font-size: 3vw;
+}
