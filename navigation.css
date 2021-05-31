@@ -100,7 +100,8 @@ nav li {
 
 .language:hover,
 nav li:hover {
-  border-bottom: 2px solid #b0acc3;
+  /* border-bottom: 2px solid #b0acc3; */
+  text-decoration: underline;
 }
 
 .search {
