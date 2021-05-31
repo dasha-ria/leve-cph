@@ -169,3 +169,7 @@ nav li:hover {
   margin-left: 100px;
   margin-right: 100px;
 }
+
+.mobile-hidden {
+  display: none;
+}
