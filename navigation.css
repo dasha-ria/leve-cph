@@ -68,6 +68,7 @@ nav ul {
   list-style: none;
   text-decoration: none;
   color: black;
+  padding-inline-start: 0;
 }
 
 nav ul {
@@ -76,9 +77,6 @@ nav ul {
   gap: 150px;
   font-size: 1.5rem;
   justify-content: center;
-}
-
-nav li {
 }
 
 .switch_language {
@@ -164,7 +162,7 @@ nav li:hover {
   margin-right: 100px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
   .mobile-hidden {
     display: none;
   }
@@ -178,6 +176,7 @@ nav li:hover {
     margin-left: 30px;
     margin-right: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .hamburger-wrapper {
@@ -230,6 +229,7 @@ nav li:hover {
     color: white;
     height: 18px;
     width: 100vw;
+    padding: 10px 0px;
   }
 
   .AnnouncementBar__Content-mobile {
@@ -239,10 +239,26 @@ nav li:hover {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1100px) {
+  nav ul {
+    gap: 80px;
+  }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 780px) {
   .desktop-hidden {
     display: none;
+  }
+
+  .icon_bar {
+    gap: 30px;
+  }
+
+  .shop_text {
+    font-size: 0.8rem;
+  }
+
+  .language-logo-icons-wrap {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
