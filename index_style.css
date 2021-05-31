@@ -151,7 +151,6 @@ font-size: 0.5rem;
 
     .colored {
         width: 20vw;
-        margin-bottom: -20px;
     }
 
     .your_choice {
@@ -160,7 +159,7 @@ font-size: 0.5rem;
 
     .item_choice {
         width: 30vw;
-        padding-top: 50px;
+        padding-top: 15px;
     }
 
     figure {
@@ -171,9 +170,13 @@ font-size: 0.5rem;
         font-family: Didot;
 font-weight: normal;
 font-style: italic;
-font-size: 3vw;
+font-size: 2.9vw;
 letter-spacing: 0.01em;
 text-align: left;
 color: #000;
 position: relative;
+    }
+
+    .words {
+        margin-top: -1.7vw;
     }
