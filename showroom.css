@@ -1,29 +1,31 @@
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   background-color: #f5f5f5;
 }
 
 .headlines {
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
   font-weight: normal;
   letter-spacing: 0.07em;
   text-align: center;
-font-style: normal;
-font-size: 3vw;
-grid-area: text;
-margin-right: 5vw;
-text-transform: uppercase;
+  font-style: normal;
+  font-size: 3vw;
+  grid-area: text;
+  margin-right: 5vw;
+  text-transform: uppercase;
 }
 
 p {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.4vw;
   -webkit-text-stroke: #707070;
   letter-spacing: 2px;
 }
 
-.three_column {
+.three_column_scnd,
+.three_column_frst {
   display: grid;
   grid-template-columns: max-content max-content max-content;
   column-gap: 4vw;
@@ -49,15 +51,15 @@ p {
 
 .theForm input {
   border-radius: 5px;
-  border: 1px solid #B0ACC3;
-  font-family: 'Quicksand', sans-serif;
+  border: 1px solid #b0acc3;
+  font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   width: 20vw;
   padding: 10px;
   box-shadow: 0;
   color: white;
   margin-bottom: 15px;
-  }
+}
 
 .theForm label {
   margin-bottom: 0.5vw;
@@ -70,16 +72,16 @@ p {
 
 .theForm button {
   border-radius: 5px;
-  background: #B0ACC3;
-  border: 1px solid #B0ACC3;
+  background: #b0acc3;
+  border: 1px solid #b0acc3;
   padding: 15px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   width: 15vw;
   padding: 10px;
   box-shadow: 0;
   color: white;
-  }
+}
 
 .theForm button:hover {
   cursor: pointer;
@@ -124,7 +126,7 @@ p {
 
 table {
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 th {
@@ -132,17 +134,58 @@ th {
   font-weight: 300;
 }
 
-th, td {
+th,
+td {
   border: none;
   padding: 10px;
   text-align-last: center;
 }
 
-td:hover, td:active, td:visited {
-  background-color: #B0ACC3;
+td:hover,
+td:active,
+td:visited {
+  background-color: #b0acc3;
 }
 
 .month_name {
-  background-color: #B0ACC3;
-  
+  background-color: #b0acc3;
+}
+
+@media only screen and (max-width: 739px) {
+  .two_column {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    column-gap: 4vw;
+  }
+
+  .three_column_frst {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 4vw;
+    justify-content: center;
+  }
+
+  .three_column_scnd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vw;
+  }
+
+  table {
+    margin: auto auto auto auto;
+  }
+
+  .theForm {
+    margin: auto auto auto auto;
+  }
+
+  .theForm input {
+    width: 70vw;
+  }
+
+  .theForm button {
+    width: 35vw;
+    margin: auto auto auto auto;
+  }
 }
