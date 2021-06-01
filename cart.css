@@ -222,10 +222,36 @@
 .checkbox-wrap {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .individual-checkbox-wrap {
   display: flex;
   flex-direction: row;
+}
+
+.color_button {
+  border-radius: 5px;
+  background: #b0acc3;
+  border: 1px solid #b0acc3;
+  padding: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  width: 20vw;
+  padding: 10px;
+  box-shadow: 0;
+  color: white;
+  margin: 10px 0px;
+  max-width: 400px;
+}
+
+.checkbox-button-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.privacy-policy-link {
+  color: black;
 }
