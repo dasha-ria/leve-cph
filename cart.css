@@ -7,7 +7,7 @@
   font-family: "Quicksand", sans-serif; */
 
 .body-wrap {
-  margin: 20px 30px;
+  margin: 20px 60px;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -30,8 +30,11 @@
   gap: 50px;
   margin-left: 130px;
 }
+
 .cart-group-text {
   font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .all-products-wrap {
@@ -42,15 +45,15 @@
 
 .first-product-wrap {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   background-color: #b0acc318;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .second-product-wrap {
   display: flex;
-  gap: 30px;
-  max-width: 500px;
+  gap: 60px;
+  max-width: 600px;
 }
 
 .first-product-info {
@@ -59,7 +62,7 @@
 }
 
 .first-pic {
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 
@@ -76,7 +79,7 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  width: 500px;
+  width: 600px;
 }
 
 .summary {
@@ -102,7 +105,7 @@
 
 .payment-total-div {
   height: 200px;
-  width: 500px;
+  width: 600px;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -154,14 +157,18 @@
 }
 
 .cart-everything-wrap {
-  width: 500px;
+  width: 600px;
+}
+
+.left-part-wrap {
+  width: 600px;
 }
 
 .grid-container {
   display: grid;
   grid-template-areas: "left right";
   display: flex;
-  gap: 70px;
+  gap: 100px;
 }
 
 .left-grid {
@@ -173,7 +180,7 @@
 }
 
 .account-tos {
-  font-size: 0.58rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   margin: 15px 0;
 }
@@ -201,4 +208,24 @@
   padding: 8px 8px;
   border-radius: 5px;
   border: solid 1px #b0acc3;
+}
+
+.checkbox-question {
+  font-size: 0.8rem;
+}
+
+.offer-checkbox {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.checkbox-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.individual-checkbox-wrap {
+  display: flex;
+  flex-direction: row;
 }
