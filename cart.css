@@ -9,6 +9,11 @@
 .body-wrap {
   margin: 20px 50px;
 }
+
+.title-wrap {
+  display: flex;
+  justify-content: center;
+}
 .cart-title {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
     "Times New Roman", serif;
@@ -38,13 +43,13 @@
   display: flex;
   gap: 30px;
   background-color: #b0acc318;
-  max-width: 40%;
+  max-width: 500px;
 }
 
 .second-product-wrap {
   display: flex;
   gap: 30px;
-  max-width: 40%;
+  max-width: 500px;
 }
 
 .first-product-info {
@@ -66,4 +71,58 @@
 .product-quantity-size {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
+}
+
+/* .entire-summary-section-2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+} */
+
+.entire-summary-section {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 500px;
+}
+
+.summary {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cost {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.total {
+  margin: 5px 0px;
+}
+
+.subtotal {
+  margin: 20px 0px;
+  font-weight: 600;
+}
+
+.payment-total-div {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.payment-total-parent {
+  width: 200px;
+}
+
+.payment-total-flex {
+  display: flex;
+  justify-content: space-between;
 }
