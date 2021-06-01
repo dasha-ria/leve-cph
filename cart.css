@@ -177,3 +177,28 @@
   text-transform: uppercase;
   margin: 15px 0;
 }
+
+.label-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 400px;
+}
+
+.label-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.form-text {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.form-shape {
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: solid 1px #b0acc3;
+}
