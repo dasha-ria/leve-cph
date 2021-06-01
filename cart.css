@@ -6,6 +6,9 @@
 
   font-family: "Quicksand", sans-serif; */
 
+.body-wrap {
+  margin: 20px 50px;
+}
 .cart-title {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
     "Times New Roman", serif;
@@ -25,10 +28,22 @@
   font-size: 1rem;
 }
 
+.all-products-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .first-product-wrap {
   display: flex;
   gap: 30px;
   background-color: #b0acc318;
+  max-width: 40%;
+}
+
+.second-product-wrap {
+  display: flex;
+  gap: 30px;
   max-width: 40%;
 }
 
