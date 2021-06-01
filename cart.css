@@ -7,12 +7,14 @@
   font-family: "Quicksand", sans-serif; */
 
 .body-wrap {
-  margin: 20px 50px;
+  margin: 20px 30px;
+  font-family: "Quicksand", sans-serif;
 }
 
 .title-wrap {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .cart-title {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
@@ -29,7 +31,6 @@
   margin-left: 130px;
 }
 .cart-group-text {
-  font-family: "Quicksand", sans-serif;
   font-size: 1rem;
 }
 
@@ -63,21 +64,13 @@
 }
 
 .product-name {
-  font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .product-quantity-size {
-  font-family: "Quicksand", sans-serif;
   font-size: 1rem;
 }
-
-/* .entire-summary-section-2 {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-} */
 
 .entire-summary-section {
   display: flex;
@@ -87,7 +80,6 @@
 }
 
 .summary {
-  font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   font-weight: 800;
   display: flex;
@@ -95,7 +87,6 @@
 }
 
 .cost {
-  font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   margin: 0;
 }
@@ -110,7 +101,7 @@
 }
 
 .payment-total-div {
-  height: 400px;
+  height: 200px;
   width: 500px;
   display: flex;
   align-items: flex-end;
@@ -125,4 +116,64 @@
 .payment-total-flex {
   display: flex;
   justify-content: space-between;
+}
+
+.promo-text {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loginmenu-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-separator {
+  height: 15px;
+  width: 1px;
+  background-color: black;
+}
+
+.loginmenu {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.help {
+  font-weight: 200;
+  margin: 0;
+}
+
+.login-help-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-everything-wrap {
+  width: 500px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "left right";
+  display: flex;
+  gap: 70px;
+}
+
+.left-grid {
+  grid-area: left;
+}
+
+.right-grid {
+  grid-area: right;
+}
+
+.account-tos {
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  margin: 15px 0;
 }
