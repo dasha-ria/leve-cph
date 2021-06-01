@@ -15,3 +15,40 @@
   font-size: 2rem;
   margin: 0;
 }
+.cart-group-text-wrap {
+  display: flex;
+  gap: 50px;
+  margin-left: 130px;
+}
+.cart-group-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+
+.first-product-wrap {
+  display: flex;
+  gap: 30px;
+  background-color: #b0acc318;
+  max-width: 40%;
+}
+
+.first-product-info {
+  display: flex;
+  gap: 100px;
+}
+
+.first-pic {
+  width: 100px;
+  height: auto;
+}
+
+.product-name {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-quantity-size {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
