@@ -214,11 +214,6 @@
   font-size: 0.8rem;
 }
 
-.offer-checkbox {
-  border: 1px solid #ccc;
-  border-radius: 50%;
-}
-
 .checkbox-wrap {
   display: flex;
   flex-direction: column;
