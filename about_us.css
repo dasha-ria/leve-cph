@@ -45,7 +45,7 @@ body {
 #first_img,
 #second_img,
 #third_img {
-  width: 19vw;
+  width: 20vw;
   height: auto;
 }
 
@@ -76,4 +76,50 @@ body {
   letter-spacing: 0.07em;
   font-style: normal;
   font-size: 3vw;
+}
+
+@media only screen and (max-width: 739px) {
+  .two_column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vw;
+  }
+
+  .pic_section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-right: 80px;
+    column-gap: 2vw;
+  }
+
+  .intro_section {
+    max-width: 90vw;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .intro_section p {
+    font-size: 2.5vw;
+  }
+
+  #first_img,
+  #second_img,
+  #third_img {
+    width: 25vw;
+    height: auto;
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+
+  .headlines {
+    font-size: 6vw;
+  }
+
+  .signature {
+    margin-left: 14vw;
+    margin-top: -1.5vw;
+    font-size: 5vw;
+  }
 }
