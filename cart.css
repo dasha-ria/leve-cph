@@ -1,0 +1,16 @@
+/* font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+
+  font-family: "Quicksand", sans-serif; */
+
+.title {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+}
