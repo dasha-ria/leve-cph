@@ -32,6 +32,11 @@ p {
   justify-content: center;
 }
 
+.three_column_scnd {
+  margin-left: 2vw;
+  column-gap: 6vw;
+}
+
 .two_column {
   display: grid;
   grid-template-columns: max-content max-content;
@@ -39,9 +44,17 @@ p {
   column-gap: 4vw;
 }
 
+iframe {
+  width: 60vw;
+}
+
 .two_column div {
   text-align: center;
   margin: auto auto auto auto;
+}
+
+.two_column div p {
+  margin-bottom: 2vw;
 }
 
 .theForm {
@@ -121,7 +134,7 @@ p {
 }
 
 #appointment p {
-  max-width: 40vw;
+  max-width: 30vw;
 }
 
 table {
@@ -151,41 +164,111 @@ td:visited {
   background-color: #b0acc3;
 }
 
+.two_column a {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 739px) {
+  p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.8vw;
+    -webkit-text-stroke: #707070;
+    letter-spacing: 2px;
+  }
+
   .two_column {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    column-gap: 4vw;
+  }
+
+  iframe {
+    width: 100%;
   }
 
   .three_column_frst {
     display: grid;
-    grid-template-columns: max-content max-content;
+    grid-template-areas:
+      "main main"
+      "pic1 pic2";
     column-gap: 4vw;
-    justify-content: center;
+    margin-bottom: 8vw;
   }
 
   .three_column_scnd {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5vw;
+    display: grid;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+    margin-right: 0;
   }
 
-  table {
-    margin: auto auto auto auto;
+  .intro {
+    margin-left: 7vw;
+    margin-bottom: 4vw;
+  }
+
+  .intro p {
+    grid-area: main;
+    width: 80vw;
+  }
+
+  #firstPic {
+    width: 35vw;
+    height: auto;
+    grid-area: pic1;
+    margin-left: 7vw;
+    padding: unset;
+  }
+
+  #secondPic {
+    width: 35vw;
+    height: auto;
+    grid-area: pic2;
+    margin-right: 5vw;
+    padding: unset;
   }
 
   .theForm {
-    margin: auto auto auto auto;
+    justify-content: center;
+    margin-left: 7vw;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+  }
+
+  #appointment .message p {
+    grid-area: one;
+    width: 80vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .calendar {
+    grid-area: two;
+  }
+
+  table {
+    size: 40%;
+    margin-right: -50vw;
+  }
+
+  .theForm {
+    grid-area: three;
   }
 
   .theForm input {
-    width: 70vw;
+    width: 60vw;
   }
 
   .theForm button {
     width: 35vw;
     margin: auto auto auto auto;
+  }
+
+  .headlines {
+    font-size: 6vw;
+    margin-bottom: 0.5vw;
+    text-align: center;
   }
 }
