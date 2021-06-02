@@ -6,6 +6,9 @@
 
   font-family: "Quicksand", sans-serif; */
 
+body {
+  margin: 0;
+}
 .body-wrap {
   margin: 20px 60px;
   font-family: "Quicksand", sans-serif;
@@ -24,6 +27,7 @@
   letter-spacing: 0.05rem;
   font-size: 2rem;
   margin: 0;
+  text-align: center;
 }
 .cart-group-text-wrap {
   display: flex;
@@ -237,6 +241,7 @@
   box-shadow: 0;
   color: white;
   margin: 10px 0px;
+  min-width: 200px;
   max-width: 400px;
 }
 
@@ -249,4 +254,137 @@
 
 .privacy-policy-link {
   color: black;
+}
+
+@media only screen and (max-width: 780px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "left left"
+      "right right";
+
+    gap: 15px;
+  }
+
+  .cart-title {
+    font-size: 1.5rem;
+  }
+
+  .first-product-wrap {
+    display: flex;
+    gap: 10px;
+    background-color: #b0acc318;
+    width: 100vw;
+  }
+
+  .body-wrap {
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif;
+    max-width: 100vw;
+  }
+
+  .right-grid {
+    /* padding-left: 30px;
+    margin-right: -40px; */
+  }
+
+  .second-product-wrap {
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+    max-width: 480px;
+  }
+
+  .cart-everything-wrap {
+    width: 90vw;
+    max-width: 480px;
+  }
+
+  .register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .label-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .label-flex {
+    max-width: 70vw;
+  }
+
+  .left-part-wrap {
+    width: 100vw;
+  }
+
+  .cart-group-text-wrap {
+    margin-left: 75px;
+    gap: 16vw;
+    max-width: 75vw;
+  }
+
+  .cart-group-text {
+    font-size: 0.6rem;
+  }
+
+  .product-name {
+    font-size: 0.7rem;
+  }
+
+  .product-quantity-size {
+    font-size: 0.7rem;
+  }
+
+  .first-product-info {
+    gap: 20vw;
+  }
+
+  .entire-summary-section {
+    width: 95vw;
+    max-width: 450px;
+  }
+
+  .summary {
+    font-size: 0.8rem;
+  }
+
+  .total {
+    font-size: 0.8rem;
+  }
+
+  .subtotal {
+    font-size: 0.9rem;
+  }
+
+  .promo-text {
+    font-size: 0.6rem;
+  }
+
+  .payment-total-div {
+    width: 95vw;
+    max-width: 450px;
+  }
+
+  .account-tos {
+    font-size: 0.6rem;
+    width: 100vw;
+  }
+
+  .login-help-wrap {
+    justify-content: space-between;
+  }
+
+  .checkbox-button-wrap {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .desktop-hidden {
+    display: none;
+  }
 }
