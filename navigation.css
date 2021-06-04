@@ -162,8 +162,8 @@ nav li:hover {
   margin-right: 100px;
 }
 
-@media only screen and (max-width: 780px) {
-  .mobile-hidden {
+@media only screen and (max-width: 600px) {
+  .mobile-hidden-menu {
     display: none;
   }
 
@@ -252,7 +252,7 @@ nav li:hover {
   }
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 600px) {
   .desktop-hidden {
     display: none;
   }
