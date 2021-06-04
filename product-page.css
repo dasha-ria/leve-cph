@@ -371,6 +371,7 @@
   .body-container {
     padding: 20px 10px;
   }
+
   .all-wrap {
     display: block;
   }
@@ -393,7 +394,7 @@
   }
 
   .inbetween-shown {
-    display: block;
+    display: flex;
   }
 
   .right-wrap {
