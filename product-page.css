@@ -420,7 +420,7 @@
     width: 30vw;
     height: 30vw;
   }
-  */ .button-flex {
+  .button-flex {
     display: flex;
     gap: 20px;
   }
