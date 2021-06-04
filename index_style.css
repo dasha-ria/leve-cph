@@ -96,6 +96,8 @@ box-shadow: 0;
 
 .frames, .screenshots, .items {
     display: flex;
+    gap: 2vw;
+    justify-content: center;
 }
 
     .review_one {
