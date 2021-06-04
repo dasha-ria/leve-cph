@@ -209,10 +209,12 @@ position: relative;
     }
     
     .landing_page {
-        height: 100vh;
+        height: 85vh;
     }
     .headlines {
     font-size: 3rem;
+    margin: 0;
+    margin-top: 5vh;
     }
     
     .front_picture {
@@ -267,11 +269,6 @@ font-size: 2.4rem;
         }
         
         .color_button {
-            border-radius: 5px;
-            background: #B0ACC3;;
-            border: 1px solid #B0ACC3;
-            padding: 15px;
-            font-family: 'Quicksand', sans-serif;
             font-size: 1.2rem;
             width: 200px;
             padding: 10px;
@@ -281,6 +278,14 @@ font-size: 2.4rem;
 
             .caption {
                 font-size: 1rem;
+            }
+
+            .about_us_text {
+                font-size: 1.1rem;
+            }
+
+            .image_about_us {
+                width: 35vw ;
             }
 }
 
@@ -301,7 +306,7 @@ font-size: 2.4rem;
         }
         
         .landing_page, .second_page {
-            height: 100vh;
+            height: 80vh;
         }
         .headlines {
         font-size: 1rem;
@@ -324,6 +329,20 @@ font-size: 2.4rem;
                     font-size: 0.5rem;
                 }
                 .about_us_text {
-                    font-size: 0.5rem;
+                    font-size: 0.8rem;
+                    width: 75vw;
+                }
+
+                .about_us_layout {
+                    display: inline-block;
+                    margin: 0;
+                }
+
+                .image_about_us {
+                    width: 75vw;
+                }
+
+                .about_us_leve {
+                    text-align-last: center;
                 }
     }
