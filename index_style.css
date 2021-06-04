@@ -1,6 +1,6 @@
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
 }
 
@@ -11,7 +11,7 @@ body {
 .landing_page {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 0.9fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         "photo text";
@@ -24,10 +24,13 @@ body {
     letter-spacing: 0.07em;
     text-align: center;
   font-style: normal;
-font-size: 3vw;
+font-size: 4.7rem;
 grid-area: text;
-margin-right: 5vw;
 text-transform: uppercase;
+}
+
+.button_position {
+    margin-left: calc(50% - 100px);
 }
 
 .front_picture {
@@ -40,6 +43,9 @@ text-transform: uppercase;
 
 .information {
     grid-area: text;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .white_button {
@@ -248,28 +254,32 @@ font-size: 2.4rem;
         margin: auto;
     }
 
+    .words {
+        font-size: 2rem;
+    }
+
     .information {
         display: contents;
     }
 
     .review_one, .review_two, .review_three {
-        height: 25vh;
+        height: 50vh;
     }
 
     .white_button {
         border-radius: 5px;
         background: white;
         border: 1px solid #707070;
-        padding: 15px;
+        padding: 10px;
         font-family: 'Quicksand', sans-serif;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         width: 200px;
         padding: 10px;
         box-shadow: 0;
         }
         
         .color_button {
-            font-size: 1.2rem;
+            font-size: 0.9rem;
             width: 200px;
             padding: 10px;
             box-shadow: 0;
@@ -344,5 +354,9 @@ font-size: 2.4rem;
 
                 .about_us_leve {
                     text-align-last: center;
+                }
+
+                .bump {
+                    margin-left: 0;
                 }
     }
