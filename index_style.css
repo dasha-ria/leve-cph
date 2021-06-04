@@ -48,7 +48,7 @@ border: 1px solid #707070;
 padding: 15px;
 font-family: 'Quicksand', sans-serif;
 font-size: 1rem;
-width: 20vw;
+max-width: 20vw;
 padding: 10px;
 box-shadow: 0;
 }
@@ -60,7 +60,7 @@ box-shadow: 0;
     padding: 15px;
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
-    width: 20vw;
+    max-width: 20vw;
     padding: 10px;
     box-shadow: 0;
     color: white;
@@ -86,13 +86,17 @@ box-shadow: 0;
     float: right;
     }
 
-
     .IG_feed {
-        display: flex;
+        display: contents;
         justify-content: center;
         margin: 0 50px 0 50px;
         gap: 2vw;
+        width: 100vw;
     }
+
+.frames, .screenshots, .items {
+    display: flex;
+}
 
     .review_one {
         background-image: url(img/review2.webp);
@@ -162,6 +166,10 @@ font-size: 0.5rem;
         padding-top: 15px;
     }
 
+    .item_choice_two {
+        width: 30vw;
+    }
+
     figure {
         margin: 0;
     }
@@ -180,3 +188,61 @@ position: relative;
     .words {
         margin-top: -1.7vw;
     }
+
+    .bump {
+        margin-top: 25px;
+    }
+
+@media only screen and (max-width: 1220px) {
+    .body {
+        margin: 0;
+    }
+    main {
+        margin: 0;
+    }
+    .landing_page {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.3fr;
+        grid-template-areas:
+            "photo" 
+            "text";
+        height: calc(100vh - 225px);
+    }
+    .headlines {
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
+        font-weight: normal;
+        letter-spacing: 0.07em;
+        text-align: center;
+      font-style: normal;
+    font-size: 3vw;
+    grid-area: text;
+    margin-right: 5vw;
+    text-transform: uppercase;
+    }
+    
+    .front_picture {
+        width: 100vw;
+        grid-area: photo;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0), 
+            rgba(0, 0, 0, 0.564)
+          ), url(img/front.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .down {
+        visibility: hidden;
+    opacity: 0%;
+    }
+
+    .response_one {
+position: absolute;
+color: white;
+top: 50vh;
+font-size: 2.4rem;
+    }
+
+}
