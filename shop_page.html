@@ -1,243 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The shop all page with all products</title>
-    <link rel="stylesheet" href="shop_css.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div id="nav-placeholder"></div>
-    </header>
-    <main>
-      <h3>SHOP</h3>
-      <section class="instead">
-        <div class="filter">
-          <h4>
-            sort price
-            <span id="filter1">+</span>
-          </h4>
-          <div class="sort_price disappear">
-            <span id="sort_price">
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="1"
-                  id="LowToHigh"
-                  name="LowToHigh"
-                />
-                <label for="LowToHigh">Low to High</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="-1"
-                  id="HighToLow"
-                  name="HighToLow"
-                />
-                <label for="HighToLow">High to Low</label>
-              </div>
-          </div>
-          <h4>
-            collection
-            <span id="filter2">+</span>
-          </h4>
-          <div class="collection disappear">
-            <span id="collection">
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="The Mint"
-                  id="the_mint"
-                  name="the_mint"
-                />
-                <label for="the_mint">The Mint</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="The Pink"
-                  id="the_pinkt"
-                  name="the_pink"
-                />
-                <label for="the_pink">The Pink</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="The Sea"
-                  id="the_sea"
-                  name="the_sea"
-                />
-                <label for="the_sea">The Sea</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="The Sky"
-                  id="the_sky"
-                  name="the_sky"
-                />
-                <label for="the_sky">The Sky</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="Daisy"
-                  id="daisy"
-                  name="daisy"
-                />
-                <label for="daisy">Daisy</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="Espresso"
-                  id="espresso"
-                  name="espresso"
-                />
-                <label for="espresso">Espresso</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="Mocha"
-                  id="mocha"
-                  name="mocha"
-                />
-                <label for="mocha">Mocha</label>
-              </div>
-            </span>
-          </div>
-          <h4>
-            category
-            <span id="filter3">+</span>
-          </h4>
-          <div class="category disappear">
-            <span id="category">
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="blazers"
-                  id="blazers"
-                  name="blazers"
-                />
-                <label for="blazers">Blazers</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="pants"
-                  id="pants"
-                  name="pants"
-                />
-                <label for="pants">Pants</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="shirts"
-                  id="shirts"
-                  name="shirts"
-                />
-                <label for="shirts">Shirts</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="vests"
-                  id="vests"
-                  name="vests"
-                />
-                <label for="vests">Vests</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="skirts"
-                  id="skirts"
-                  name="skirts"
-                />
-                <label for="skirts">Skirts</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="trenchcoats"
-                  id="trenchcoats"
-                  name="trenchcoats"
-                />
-                <label for="trenchcoats">Trenchcoats</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="shorts"
-                  id="shorts"
-                  name="shorts"
-                />
-                <label for="shorts">Shorts</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  data-category="dresses"
-                  id="dresses"
-                  name="dresses"
-                />
-                <label for="dresses">Dresses</label>
-              </div>
-            </span>
-          </div>
-          <h4>
-            size
-            <span id="filter4">+</span>
-          </h4>
-          <div class="size disappear">
-            <span id="sizes">
-                <label> <button id="XXS" class="btn_filter"> </button> XXS</label>
-                <label> <button id="XS" class="btn_filter"> </button> XS</label>
-                <label> <button id="S" class="btn_filter"> </button> S</label>
-                <label> <button id="M" class="btn_filter"> </button> M</label>
-                <label> <button id="L" class="btn_filter"> </button> L</label>
-            </span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The shop all page with all products</title>
+  <link rel="stylesheet" href="shop_css.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div id="nav-placeholder"></div>
+  </header>
+  <main>
+    <h3>SHOP</h3>
+    <section class="instead">
+      <div class="filter">
+        <h4>
+          sort price
+          <span id="filter1">+</span>
+        </h4>
+        <div class="sort_price disappear">
+          <span id="sort_price">
+            <div>
+              <input type="checkbox" data-category="1" id="LowToHigh" name="LowToHigh" />
+              <label for="LowToHigh">Low to High</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="-1" id="HighToLow" name="HighToLow" />
+              <label for="HighToLow">High to Low</label>
+            </div>
         </div>
-          <div class="list"></div>
-          <template id="theList">
-            <article>
-              <a href="product-page.html">
-                <img src="images/Siri_recycled_blue-front.webp" />
-              </a>
-              <lebel class="disappear"><span class="row_show">
-                  <div id="box_XXS" class="boxy">XXS</div>
-                  <div id="box_XS" class="boxy">XS</div>
-                  <div id="box_S" class="boxy">S</div>
-                  <div id="box_M" class="boxy">M</div>
-                  <div id="box_L" class="boxy">L</div>
-              </span></lebel>
-              <h4 class="name">ULRIKKE</h4>
-              <p>
-              <span class="price">399</span>
-              <span class="discount"> </span>
-              </p>
-            </article>
-          </template>
+        <h4>
+          collection
+          <span id="filter2">+</span>
+        </h4>
+        <div class="collection disappear">
+          <span id="collection">
+            <div>
+              <input type="checkbox" data-category="The Mint" id="the_mint" name="the_mint" />
+              <label for="the_mint">The Mint</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="The Pink" id="the_pinkt" name="the_pink" />
+              <label for="the_pink">The Pink</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="The Sea" id="the_sea" name="the_sea" />
+              <label for="the_sea">The Sea</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="The Sky" id="the_sky" name="the_sky" />
+              <label for="the_sky">The Sky</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="Daisy" id="daisy" name="daisy" />
+              <label for="daisy">Daisy</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="Espresso" id="espresso" name="espresso" />
+              <label for="espresso">Espresso</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="Mocha" id="mocha" name="mocha" />
+              <label for="mocha">Mocha</label>
+            </div>
+          </span>
         </div>
-      </section>
-    </main>
-    <script src="shop_script.js"></script>
-    <script src="//code.jquery.com/jquery.min.js"></script>
-      <script>
-      $.get("navigation.html", function(data){
-          $("#nav-placeholder").replaceWith(data);
-      });
-    </script>
-  </body>
+        <h4>
+          category
+          <span id="filter3">+</span>
+        </h4>
+        <div class="category disappear">
+          <span id="category">
+            <div>
+              <input type="checkbox" data-category="blazers" id="blazers" name="blazers" />
+              <label for="blazers">Blazers</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="pants" id="pants" name="pants" />
+              <label for="pants">Pants</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="shirts" id="shirts" name="shirts" />
+              <label for="shirts">Shirts</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="vests" id="vests" name="vests" />
+              <label for="vests">Vests</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="skirts" id="skirts" name="skirts" />
+              <label for="skirts">Skirts</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="trenchcoats" id="trenchcoats" name="trenchcoats" />
+              <label for="trenchcoats">Trenchcoats</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="shorts" id="shorts" name="shorts" />
+              <label for="shorts">Shorts</label>
+            </div>
+            <div>
+              <input type="checkbox" data-category="dresses" id="dresses" name="dresses" />
+              <label for="dresses">Dresses</label>
+            </div>
+          </span>
+        </div>
+        <h4>
+          size
+          <span id="filter4">+</span>
+        </h4>
+        <div class="size disappear">
+          <span id="sizes">
+            <label> <button id="XXS" class="btn_filter"> </button> XXS</label>
+            <label> <button id="XS" class="btn_filter"> </button> XS</label>
+            <label> <button id="S" class="btn_filter"> </button> S</label>
+            <label> <button id="M" class="btn_filter"> </button> M</label>
+            <label> <button id="L" class="btn_filter"> </button> L</label>
+          </span>
+        </div>
+      </div>
+      <div class="list"></div>
+      <template id="theList">
+        <article>
+          <a href="product-page.html">
+            <img src="images/Siri_recycled_blue-front.webp" />
+          </a>
+          <lebel class="disappear"><span class="row_show">
+              <div id="box_XXS" class="boxy">XXS</div>
+              <div id="box_XS" class="boxy">XS</div>
+              <div id="box_S" class="boxy">S</div>
+              <div id="box_M" class="boxy">M</div>
+              <div id="box_L" class="boxy">L</div>
+            </span></lebel>
+          <h4 class="name">ULRIKKE</h4>
+          <p class="p-class">
+            <span class="price">399</span>
+            <span class="discount"> </span>
+          </p>
+        </article>
+      </template>
+      </div>
+    </section>
+  </main>
+  <script src="shop_script.js"></script>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+    $.get("navigation.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
+</body>
+
 </html>

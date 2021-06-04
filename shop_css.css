@@ -33,7 +33,7 @@ h5 {
   margin-bottom: 1vw;
 }
 
-p {
+.p-class {
   font-family: "Quicksand", sans-serif;
   font-size: 1.4vw;
   max-width: 45vw;
