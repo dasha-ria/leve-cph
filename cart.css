@@ -1,0 +1,419 @@
+/* font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+
+  font-family: "Quicksand", sans-serif; */
+
+body {
+  margin: 0;
+}
+.body-wrap {
+  margin: 20px 60px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.title-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.cart-title {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+.cart-group-text-wrap {
+  display: flex;
+  gap: 50px;
+  margin-left: 130px;
+}
+
+.cart-group-text {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.all-products-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first-product-wrap {
+  display: flex;
+  gap: 60px;
+  background-color: #b0acc318;
+  max-width: 600px;
+}
+
+.second-product-wrap {
+  display: flex;
+  gap: 60px;
+  max-width: 600px;
+}
+
+.first-product-info {
+  display: flex;
+  gap: 100px;
+}
+
+.first-pic {
+  width: 70px;
+  height: auto;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-quantity-size {
+  font-size: 1rem;
+}
+
+.entire-summary-section {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 600px;
+}
+
+.summary {
+  font-size: 1rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cost {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.total {
+  margin: 5px 0px;
+}
+
+.subtotal {
+  margin: 20px 0px;
+  font-weight: 600;
+}
+
+.payment-total-div {
+  height: 200px;
+  width: 600px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.payment-total-parent {
+  width: 200px;
+}
+
+.payment-total-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-text {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loginmenu-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-separator {
+  height: 15px;
+  width: 1px;
+  background-color: black;
+}
+
+.loginmenu {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.help {
+  font-weight: 200;
+  margin: 0;
+}
+
+.login-help-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-everything-wrap {
+  width: 600px;
+}
+
+.left-part-wrap {
+  width: 600px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "left right";
+  display: flex;
+  gap: 100px;
+}
+
+.left-grid {
+  grid-area: left;
+}
+
+.right-grid {
+  grid-area: right;
+}
+
+.account-tos {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.label-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 400px;
+}
+
+.label-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.form-text {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.form-shape {
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: solid 1px #b0acc3;
+}
+
+.checkbox-question {
+  font-size: 0.8rem;
+}
+
+.checkbox-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.individual-checkbox-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.color_button {
+  border-radius: 5px;
+  background: #b0acc3;
+  border: 1px solid #b0acc3;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0;
+  color: white;
+  margin: 10px 0px;
+}
+
+.checkbox-button-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.privacy-policy-link {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .cart-everything-wrap {
+    width: auto;
+  }
+
+  .left-part-wrap {
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "left left"
+      "right right";
+
+    gap: 15px;
+  }
+
+  .cart-title {
+    font-size: 1.5rem;
+  }
+
+  .first-product-wrap {
+    display: flex;
+    gap: 10px;
+    background-color: #b0acc318;
+    width: 100%;
+  }
+
+  .body-wrap {
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .right-grid {
+    width: calc(100vw - 20 * 2px);
+    margin: 0 20px;
+  }
+
+  .left-grid {
+    width: 100vw;
+  }
+
+  .second-product-wrap {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .cart-everything-wrap {
+    /* width: 90vw;
+    max-width: 480px; */
+  }
+
+  .register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .label-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .label-flex {
+    max-width: 70vw;
+  }
+
+  .cart-group-text-wrap {
+    margin-left: 75px;
+    gap: 16vw;
+    max-width: 75vw;
+  }
+
+  .cart-group-text {
+    font-size: 0.6rem;
+  }
+
+  .product-name {
+    font-size: 0.7rem;
+  }
+
+  .product-quantity-size {
+    font-size: 0.7rem;
+  }
+
+  .first-product-info {
+    gap: 20vw;
+  }
+
+  .entire-summary-section {
+    width: calc(100% - 20px);
+    padding-right: 20px;
+  }
+
+  .summary {
+    font-size: 0.8rem;
+  }
+
+  .total {
+    font-size: 0.8rem;
+  }
+
+  .subtotal {
+    font-size: 0.9rem;
+  }
+
+  .promo-text {
+    font-size: 0.6rem;
+  }
+
+  .payment-total-div {
+    width: 100%;
+  }
+
+  .account-tos {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+
+  .login-help-wrap {
+    justify-content: space-between;
+  }
+
+  .checkbox-button-wrap {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .desktop-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "left left"
+      "right right";
+
+    gap: 15px;
+  }
+
+  .body-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-pic {
+    width: 100px;
+  }
+
+  .cart-group-text-wrap {
+    margin-left: 160px;
+  }
+}

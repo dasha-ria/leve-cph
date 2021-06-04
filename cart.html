@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="body-wrap">
+
+        <div class="title-wrap">
+            <h1 class="cart-title">YOUR <i> SHOPPING CART</i></h1>
+        </div>
+
+
+        <div class="grid-container">
+            <div class="left-grid">
+                <div class="left-part-wrap">
+                    <div class="cart-group-text-wrap">
+                        <p class="cart-group-text">NAME OF THE ITEM</p>
+                        <p class="cart-group-text">QUANTITY</p>
+                        <p class="cart-group-text">SIZE</p>
+                    </div>
+
+
+
+                    <div class="all-products-wrap">
+                        <div class="first-product-wrap">
+                            <img class="first-pic" src="daria-pics/blazer-front.jpg">
+
+                            <div class="first-product-info">
+                                <p class="product-name">THE SEA BLAZER</p>
+                                <p class="product-quantity-size">1</p>
+                                <p class="product-quantity-size">M</p>
+                            </div>
+                        </div>
+
+                        <div class="second-product-wrap">
+                            <img class="first-pic" src="daria-pics/blazer-front.jpg">
+
+                            <div class="first-product-info">
+                                <p class="product-name">THE SEA BLAZER</p>
+                                <p class="product-quantity-size">1</p>
+                                <p class="product-quantity-size">M</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section>
+
+                        <div class="entire-summary-section">
+                            <p class="summary">ORDER SUMMARY</p>
+
+                            <div class="payment-total-div">
+                                <div class="payment-total-parent">
+                                    <div class="payment-total-flex">
+                                        <p class="cost total">ITEM TOTAL</p>
+                                        <p class="cost total"><span>598 DKK</span></p>
+                                    </div>
+
+                                    <div class="payment-total-flex">
+                                        <p class="cost total">DISCOUNT</p>
+                                        <p class="cost total"><span>30 DKK</span></p>
+                                    </div>
+
+                                    <div class="payment-total-flex">
+                                        <p class="cost total">SHIPPING</p>
+                                        <p class="cost total"><span>30 DKK</span></p>
+                                    </div>
+
+                                    <div class="payment-total-flex">
+                                        <p class="cost subtotal">SUBTOTAL</p>
+                                        <p class="cost subtotal"><span>628 DKK</span></p>
+                                    </div>
+
+                                    <p class="promo-text">ADD A PROMOTIONAL CODE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="right-grid">
+                <div class="cart-everything-wrap">
+                    <div class="login-help-wrap">
+                        <div class="loginmenu-flex">
+                            <p class="loginmenu">REGISTER</p>
+                            <div class="login-separator"></div>
+                            <p class="loginmenu">LOG IN</p>
+                        </div>
+
+                        <p class="help">NEED HELP?</p>
+                    </div>
+                    <p class="account-tos">By creating an account with our store, you will be able to move through the
+                        checkout process faster, store multiple shipping addresses, view and track your orders in your
+                        account and more.</p>
+
+                    <form class="register-form">
+
+                        <div class="label-row">
+                            <div class="label-flex">
+                                <label class="form-text" for="name">Name</label>
+                                <input class="form-shape" type="text" name="name" placeholder="Your name">
+                            </div>
+
+                            <div class="label-flex">
+                                <label class="form-text" for="email">Email</label>
+                                <input class="form-shape" type="email" name="email" placeholder="Your email">
+                            </div>
+                        </div>
+
+                        <div class="label-row">
+                            <div class="label-flex">
+                                <label class="form-text" for="zip">Zip Code</label>
+                                <input class="form-shape" type="text" name="name" placeholder="Your zip code">
+                            </div>
+
+                            <div class="label-flex">
+                                <label class="form-text" for="password">Password</label>
+                                <input class="form-shape" type="password" name="password" placeholder="Your password">
+                            </div>
+                        </div>
+
+                        <div class="label-row">
+                            <div class="label-flex">
+                                <label class="form-text" for="city">City</label>
+                                <input class="form-shape" type="text" name="city" placeholder="City">
+                            </div>
+
+                            <div class="label-flex">
+                                <label class="form-text" for="address">Address</label>
+                                <input class="form-shape" type="text" name="address" placeholder="Your address">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="checkbox-button-wrap">
+
+                    <div class="checkbox-wrap">
+                        <p class="checkbox-question">SIGN UP FOR STYLE NEWS AND OFFERS?</p>
+
+                        <div class="individual-checkbox-wrap">
+                            <input class="offer-checkbox" type="radio" id="yes-offer" name="yes-offer" checked>
+                            <label class="offer-checkbox-text" for="yes-offer">YES, PLEASE!</label>
+                        </div>
+
+                        <div class="individual-checkbox-wrap">
+                            <input class="offer-checkbox" type="radio" id="no-offer" name="yes-offer" checked>
+                            <label class="offer-checkbox-text" for="no-offer">NO, THANKS</label>
+                        </div>
+                        <p class="checkbox-question">WHAT WILL I RECEIVE?</p>
+                    </div>
+
+                    <div>
+                        <button class="color_button">continue to checkout</button>
+                        <p class="checkbox-question">FIND OUT MORE ABOUT OUR <a href="#"
+                                class="privacy-policy-link">PRIVACY POLICY</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
