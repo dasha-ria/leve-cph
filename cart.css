@@ -235,13 +235,11 @@ body {
   border: 1px solid #b0acc3;
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
-  width: 20vw;
+  width: 200px;
   padding: 10px;
   box-shadow: 0;
   color: white;
   margin: 10px 0px;
-  min-width: 200px;
-  max-width: 400px;
 }
 
 .checkbox-button-wrap {
@@ -255,7 +253,7 @@ body {
   color: black;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 600px) {
   .cart-everything-wrap {
     width: auto;
   }
@@ -388,8 +386,34 @@ body {
   }
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 600px) {
   .desktop-hidden {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "left left"
+      "right right";
+
+    gap: 15px;
+  }
+
+  .body-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-pic {
+    width: 100px;
+  }
+
+  .cart-group-text-wrap {
+    margin-left: 160px;
   }
 }
