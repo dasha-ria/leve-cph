@@ -21,8 +21,8 @@
   letter-spacing: 0.1em;
   background-color: #b0acc3;
   color: white;
-  height: 30px;
   width: 100vw;
+  padding: 5px 0;
 }
 
 .AnnouncementBar__Content {
@@ -227,9 +227,8 @@ nav li:hover {
     letter-spacing: 0.1em;
     background-color: #b0acc3;
     color: white;
-    height: 18px;
     width: 100vw;
-    padding: 10px 0px;
+    padding: 5px 0px;
   }
 
   .AnnouncementBar__Content-mobile {
@@ -241,6 +240,10 @@ nav li:hover {
 @media only screen and (min-width: 480px) and (max-width: 1100px) {
   nav ul {
     gap: 80px;
+  }
+
+  .AnnouncementBar-mobile {
+    font-size: 1.25rem;
   }
 }
 
