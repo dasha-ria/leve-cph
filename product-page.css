@@ -234,6 +234,14 @@
   object-fit: cover;
 }
 
+.product-pic-shown {
+  display: block;
+}
+
+.product-pic-hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 480px) {
   .mobile-hidden-product {
     display: none;
