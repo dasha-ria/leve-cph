@@ -44,6 +44,8 @@ function listProducts(data) {
 
 function showProduct(product) {
   console.log(product);
+  document.querySelector("#breadcrumb-category").textContent = product.category;
+  document.querySelector("#breadcrumb-name").textContent = product.name;
   document.querySelector(".product-title").textContent = product.name;
   document.querySelector(".product-infotext").textContent =
     product.product_info;
