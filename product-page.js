@@ -1,3 +1,54 @@
+const urlParams = new URLSearchParams(window.location.search);
+const productId = urlParams.get("id");
+
+const url = `https://kea21s-6eb0.restdb.io/rest/leve-products/${productId}`;
+
+// fetch(url
+// {
+//     method: "GET",
+//     headers: {
+//       "x-apikey": "606d606af55350043100752e",
+//     },
+//   }
+// )
+//   .then((res) => res.json())
+//   .then((data) => {
+//     listProducts(data);
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
+// }
+// )
+
+fetch(url, {
+  method: "GET",
+  headers: {
+    "x-apikey": "606d606af55350043100752e",
+  },
+})
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+    listProducts(data);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+function listProducts(data) {
+  showProduct(data);
+}
+
+function showProduct(product) {
+  console.log(product);
+  document.querySelector(".product-title").textContent = product.name;
+  document.querySelector(".product-infotext").textContent =
+    product.product_info;
+  document.querySelector("#product-price-span").textContent = product.price;
+  document.querySelector(".front-pic").src = product.product_img_front;
+}
+
 function frontPic() {
   document.querySelector("#pic-1").classList.remove("product-pic-hidden");
   document.querySelector("#pic-2").classList.add("product-pic-hidden");

@@ -70,12 +70,11 @@
   gap: 5vw;
 }
 
-/* 
 .product-price {
   font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
   margin: 20px 0px;
-} */
+}
 
 .product-sale-wrap {
   display: flex;
