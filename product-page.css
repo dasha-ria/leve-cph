@@ -241,6 +241,23 @@
   display: none;
 }
 
+.sale-hidden {
+  display: none;
+}
+
+.text-hidden {
+  display: none;
+}
+
+#sizeandfit-text,
+#composition-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  max-width: 300px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 480px) {
   .mobile-hidden-product {
     display: none;

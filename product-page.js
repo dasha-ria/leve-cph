@@ -38,6 +38,8 @@ fetch(url, {
 
 function listProducts(data) {
   showProduct(data);
+  sizefitToggle(data);
+  compositionToggle(data);
 }
 
 function showProduct(product) {
@@ -47,6 +49,41 @@ function showProduct(product) {
     product.product_info;
   document.querySelector("#product-price-span").textContent = product.price;
   document.querySelector(".front-pic").src = product.product_img_front;
+  document.querySelector(".front-pic-mobile").src = product.product_img_front;
+  document.querySelector("#click-pic-1").src = product.product_img_front;
+
+  if (product.sale) {
+    console.log("is on sale");
+    document
+      .querySelector(".product-sale-wrap")
+      .classList.remove("sale-hidden");
+    document.querySelector(".product-price").classList.add("sale-hidden");
+    document.querySelector("#sale-span").textContent = product.price;
+    document.querySelector("#newprice-span").textContent = product.sale_price;
+  }
+}
+
+// document.querySelector("#sizeandfit").addEventListener("click", sizefitToggle);
+
+// function sizefitToggle(text) {
+//   console.log("function dropDown1()");
+//   // document.querySelector(".sort_price").classList.toggle("disappear");
+//   document.querySelector("#sizeandfit-text").classList.remove(".text-hidden");
+// }
+
+function sizefitToggle(product) {
+  document.querySelector("#sizeandfit").onclick = () => {
+    document.querySelector("#sizeandfit-text").classList.toggle("text-hidden");
+    document.querySelector("#sizeandfit-text").textContent = product.sizefit;
+  };
+}
+
+function compositionToggle(product) {
+  document.querySelector("#composition").onclick = () => {
+    document.querySelector("#composition-text").classList.toggle("text-hidden");
+    document.querySelector("#composition-text").textContent =
+      product.composition;
+  };
 }
 
 function frontPic() {
