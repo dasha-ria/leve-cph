@@ -133,8 +133,8 @@ iframe {
   column-gap: 5vw;
 }
 
-#appointment p {
-  max-width: 30vw;
+.message {
+  width: 30vw;
 }
 
 table {
