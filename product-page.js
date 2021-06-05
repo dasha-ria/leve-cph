@@ -76,12 +76,28 @@ function sizefitToggle(product) {
     document.querySelector("#sizeandfit-text").classList.toggle("text-hidden");
     document.querySelector("#sizeandfit-text").textContent = product.sizefit;
   };
+
+  document.querySelector("#sizeandfit-mobile").onclick = () => {
+    document
+      .querySelector("#sizeandfit-text-mobile")
+      .classList.toggle("text-hidden");
+    document.querySelector("#sizeandfit-text-mobile").textContent =
+      product.sizefit;
+  };
 }
 
 function compositionToggle(product) {
   document.querySelector("#composition").onclick = () => {
     document.querySelector("#composition-text").classList.toggle("text-hidden");
     document.querySelector("#composition-text").textContent =
+      product.composition;
+  };
+
+  document.querySelector("#composition-mobile").onclick = () => {
+    document
+      .querySelector("#compositiontext-mobile")
+      .classList.toggle("text-hidden");
+    document.querySelector("#compositiontext-mobile").textContent =
       product.composition;
   };
 }

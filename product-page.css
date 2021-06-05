@@ -415,6 +415,12 @@
     padding: 10px 30px;
   }
 
+  #sizeandfit-text-mobile,
+  #compositiontext-mobile {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+  }
+
   .button-flex-mobile {
     display: flex;
     gap: 5px;
