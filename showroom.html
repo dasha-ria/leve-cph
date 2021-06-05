@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The shop all page with all products</title>
+    <link rel="stylesheet" href="showroom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/tkg8knr.css" />
+    
+  </head>
+  <body>
+    <header>
+      <div id="nav-placeholder"></div>
+    </header>
+    <main>
+      <h1 class="headlines">OUR <i>SHOWROOM</i></h1>
+      <section class="three_column">
+          <img src="img/showroom_pic1.webp" alt="The picture of leve. showroom." id="firstPic"></img>
+          <div class="intro"><p>Over the past month, we have worked hard to get a showroom stacked up for you.
+        </p>
+    <p>We have now become part of a combined content and showroom, which is a universe where senses, scents and expressions are created. Exclusive and bold Danish brands are presented here, everything from clothes, accessories, beauty products etc.
+    </p>
+<p>Explore an experimental and unique universe where our brand ‘leve.’s collections can be seen, touched and tried on. </p>
+</div>
+<img src="img/showroom_pic2.webp" alt="The picture of leve. showroom." id="secondPic"></img>
+      </section>
+      <h1 class="headlines">MAKE <i>AN APPOINTMENT</i></h1>
+      <section id="appointment" class="three_column">
+          <div class="calendar">
+
+            <table border="1">
+
+              <tr>
+              <th colspan="7" class="month_name">June 2021</th>
+              </tr>
+              
+              <tr>
+              <th>Su</th>
+              <th>Mo</th>
+              <th>Tu</th>
+              <th>We</th>
+              <th>Th</th>
+              <th>Fr</th>
+              <th>Sa</th>
+              </tr>
+              
+              <tr>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              </tr>
+              
+              <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              </tr>
+              
+              <tr>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              </tr>
+              
+              <tr>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              </tr>
+              
+              <tr>
+                <td>28</td>
+                <td>29</td>
+              <td>30</td>
+              <td>31</td>
+              </tr>
+              
+              </table>
+
+          </div>
+          <form autocomplete="on" method="POST" data-netlify="true" class="theForm">
+                <label for="name">NAME</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="First and Lastname"
+                  required
+                />
+      
+                <label for="email">EMAIL</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="abcdefg@gmail.com"
+                  required
+                />
+      
+                <label for="tel_number">TEL NO.</label>
+                <input
+                  id="tel_number"
+                  type="text"
+                  name="tel_number"
+                  placeholder="+45 xx xx xx xx"
+                  required
+                />
+      
+                <button class="book_btn">book time</button>
+          </form>
+          <div><p>
+            We are thrilled to meet you in our showroom!
+          </p>
+        <p>For us to provide the best experience for you, please fill out this form to book an appointment.</p>
+        <p>We will gladly send you time and place reminder if you would like us to.</p></div>
+      </section>
+      <h1 class="headlines">FIND US <i>HERE</i></h1>
+      <section class="two_column">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1295910978706!2d12.58727815111554!3d55.686734680440225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652531f38d725b7%3A0x35fc0f2afe34fc!2sStore%20Kongensgade%2095%2C%201264%20K%C3%B8benhavn!5e0!3m2!1sen!2sdk!4v1622399409505!5m2!1sen!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div><p>ADDRESS:<br>Store Kongensgade 95,<br>1264 Copenhagen K
+            </p><br>
+        <p>PHONE:</p> <a href="tel:+45-26-11-05-11">+45 26 11 05 11</a>
+            <br>
+        <p>OPENING HOURS:<br>Monday To Friday<br>9:00 to 16:30</p></div>
+      </section>
+    </main>
+    <script src="showroom.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+      <script>
+      $.get("navigation.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+  </body>
+</html>
