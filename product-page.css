@@ -27,7 +27,6 @@
 
 .all-wrap {
   display: flex;
-  gap: 5vw;
   justify-content: center;
   align-items: center;
 }
@@ -68,6 +67,7 @@
 
 .middle-right-wrap {
   display: flex;
+  gap: 5vw;
 }
 
 /* 
@@ -496,9 +496,12 @@
     gap: 30px;
   }
 
+  .middle-right-wrap {
+    gap: 30px;
+  }
+
   .all-wrap {
     flex-direction: column;
-    gap: 20px;
   }
 
   .color_button {
