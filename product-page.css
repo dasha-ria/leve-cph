@@ -15,7 +15,8 @@
 }
 
 .column-pics-size {
-  width: 90px;
+  width: 5vw;
+  min-width: 90px;
   height: auto;
 }
 
@@ -27,12 +28,14 @@
 .all-wrap {
   display: flex;
   gap: 5vw;
-  max-width: 1400px;
+  justify-content: center;
+  align-items: center;
 }
 
 .front-pic {
-  max-width: 350px;
-  height: 562px;
+  height: auto;
+  width: 20vw;
+  min-width: 350px;
   object-fit: cover;
 }
 
@@ -61,6 +64,10 @@
   flex-direction: row;
   gap: 5vw;
   margin: 0;
+}
+
+.middle-right-wrap {
+  display: flex;
 }
 
 /* 
@@ -164,6 +171,11 @@
   margin: 10px 0px;
 }
 
+.button-flex {
+  display: flex;
+  gap: 10px;
+}
+
 .productinfo {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
     "Times New Roman", serif;
@@ -213,11 +225,12 @@
   display: flex;
   gap: 50px;
   justify-content: center;
+  align-items: center;
 }
 
 .suggestion-pic {
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
   object-fit: cover;
 }
 
@@ -367,17 +380,25 @@
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 880px) {
+@media only screen and (min-width: 480px) and (max-width: 1100px) {
   .body-container {
     padding: 20px 10px;
   }
 
   .all-wrap {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .left-middle-wrap {
     display: block;
+  }
+
+  .middle-wrap {
+    justify-content: center;
+    align-items: center;
   }
 
   .product-title {
@@ -411,7 +432,7 @@
   }
 }
 
-@media only screen and (min-width: 880px) and (max-width: 1200px) {
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
   .body-container {
     padding: 20px 20px;
   }
