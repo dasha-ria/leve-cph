@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 
 .ham {
-    display: none;
+  display: none;
 }
 
 .hidden {
-    visibility: hidden;
-    opacity: 0%;
+  visibility: hidden;
+  opacity: 0%;
 }
 
 /*
@@ -14,24 +14,20 @@
  * ANNOUNCEMENT BAR
  * ----------------------------------------------------------------------------
  */
- .AnnouncementBar {
-font-family: 'Quicksand', sans-serif;
-position: relative;
-text-align: center;
-font-size: 1.25rem;
-letter-spacing: 0.1em;
-z-index: 1;
-background-color: #B0ACC3;
-color: white;
-}
-
-.AnnouncementBar__Wrapper {
-padding: 12px 15px;
+.AnnouncementBar {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  background-color: #b0acc3;
+  color: white;
+  width: 100vw;
+  padding: 10px 0;
 }
 
 .AnnouncementBar__Content {
-color: inherit;
-margin: 0;
+  color: inherit;
+  margin: 0;
 }
 
 /*
@@ -39,74 +35,69 @@ margin: 0;
  * NAV
  * ----------------------------------------------------------------------------
  */
- nav {
-font-family: 'Quicksand', sans-serif;
-margin: 0;
-max-width: 100%;
-height: 175px;
-background-size: cover;
-border: 1px solid #B0ACC3;
-z-index: 2;
-background-color: white;
+
+/* ------DARIA------- */
+
+body {
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
 }
 
 .logo {
-font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
-font-size: 5rem; 
-position: absolute;
-left: 45%;
+  display: flex;
+  justify-content: center;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-size: 5rem;
+  flex: 1;
 }
 
 .logo:hover {
-  color: #B0ACC3;
+  color: #b0acc3;
   transition: transform 0.2s ease;
 }
 
-nav li {
-font-size: 1.5rem;
-letter-spacing: 0.12em;
-text-transform: uppercase;
-margin: 75px 150px 0 0;
-padding-bottom: 5px;
-display: inline-flex;
-justify-content: space-evenly;
+nav a,
+nav ul {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  padding-inline-start: 0;
 }
-  
-nav a, nav ul {
-list-style: none;
-text-decoration: none;
-color: black;
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  font-size: 1.5rem;
+  justify-content: center;
 }
 
 .switch_language {
-  margin-left: 5vw;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex: 1;
 }
 
 .language {
-color: black;
-font-size: 1.25rem;
-float: left;
-padding: 25px 10px 5px 10px;
-}
-  
-.language:hover, nav li:hover {
-border-bottom: 2px solid #B0ACC3;
+  font-size: 1.25rem;
 }
 
-.shop_text {
-  color: black;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 70px;
-  left: 81vw;
-  text-align: left;
+.language:hover,
+nav li:hover {
+  /* border-bottom: 2px solid #b0acc3; */
+  text-decoration: underline;
 }
 
 .search {
   background-image: url(img/search.png);
-  position: absolute;
-  top: 0;
-  left: 73vw;
 }
 
 .search:hover {
@@ -116,9 +107,6 @@ border-bottom: 2px solid #B0ACC3;
 
 .shop_bag {
   background-image: url(img/shopping-bag.png);
-  position: absolute;
-  top: 0;
-  left: 78vw;
 }
 
 .shop_bag:hover {
@@ -128,9 +116,13 @@ border-bottom: 2px solid #B0ACC3;
 
 .user_account {
   background-image: url(img/user.png);
-  position: absolute;
-  top: 0;
-  left: 90vw;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .user_account:hover {
@@ -138,12 +130,138 @@ border-bottom: 2px solid #B0ACC3;
   transition: transform 0.2s ease;
 }
 
-.icon {
-  background-position: center;
-  min-width: 2vw;
-  max-width: 40px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
+.icon_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 50px;
+  flex: 1;
 }
 
+.shopping-cart-group {
+  display: flex;
+  gap: 10px;
+}
+
+.shop_text {
+  margin: 0;
+}
+
+.purple-line {
+  width: 100vw;
+  height: 1px;
+  background-color: #b0acc3;
+}
+
+.language-logo-icons-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-hidden-menu {
+    display: none;
+  }
+
+  .mobile-nav-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Quicksand", sans-serif;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .hamburger-wrapper {
+    flex: 1;
+  }
+
+  .hamburger-menu {
+    background-image: url(img/ham.png);
+    width: 30px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .logo-mobile {
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+      "Times New Roman", serif;
+    font-size: 3rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    flex: 1;
+  }
+
+  .shop-wrap-mobile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
+  }
+
+  .shop-cart-mobile {
+    background-image: url(img/shopping-bag.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .shop-text-mobile {
+    font-size: 0.7rem;
+  }
+
+  .AnnouncementBar-mobile {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    background-color: #b0acc3;
+    color: white;
+    width: 100vw;
+    padding: 7px 0px;
+  }
+
+  .AnnouncementBar__Content-mobile {
+    color: inherit;
+    margin: 0;
+  }
+
+  .language-logo-icons-wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1100px) {
+  nav ul {
+    gap: 80px;
+  }
+
+  .AnnouncementBar-mobile {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .desktop-hidden {
+    display: none;
+  }
+
+  .icon_bar {
+    gap: 30px;
+  }
+
+  .shop_text {
+    font-size: 0.8rem;
+  }
+}

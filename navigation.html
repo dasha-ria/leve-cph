@@ -1,42 +1,89 @@
-<link rel="stylesheet" href="navigation.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 
+<body>
     <div id="navbar">
-        <section id="section-announcement" data-section-id="announcement" data-section-type="announcement-bar">
+        <section id="section-announcement" data-section-id="announcement" data-section-type="announcement-bar"
+            class="mobile-hidden-menu">
             <div class="AnnouncementBar">
-                <div class="AnnouncementBar__Wrapper">
-                    <p class="AnnouncementBar__Content">
-                        <span>FREE DELIVERY WITH PURCHASES OVER 500 DKK</span>
-                    </p>
-                </div>
-            
-                <nav id="navigation">
-                    <div class="switch_language">
-                    <span class="language">EN</span>
-                    <span class="language">DK</span>
-                </div>
-                    <a class="logo" href="index.html">leve.</a>
-                    
-                    <div id="icon_bar">
-                    <div class="search icon" alt="search bar"></div>
-                    
-                    <div class="shop_bag icon" alt="shopping cart"></div>
-                    <p class="shop_text"><span class="shop_number_of_items"><span>0</span> ITEMS <br> IN YOUR BAG</p>
-                
-                    <div class="user_account icon" alt="user personal account"></div>
-                </div>
-                
-               <br>
-                   <ul>
-                       <li><a href="shop_all.html">SHOP</a></li>
-                       <li><a href="collections.html">SALE</a></li>
-                       <li><a href="shop_all.html">NEW IN</a></li>
-                       <li><a href="about_us.html">ABOUT US</a></li>  
-                   </ul>
-               </div>
-                   </nav>
-               
-            
+                <p class="AnnouncementBar__Content">
+                    <span>FREE DELIVERY WITH PURCHASES OVER 500 DKK</span>
+                </p>
             </div>
+        </section>
 
+        <nav id="navigation">
+            <div class="mobile-hidden-menu">
+                <div class="language-logo-icons-wrap">
+                    <div class="switch_language">
+                        <span class="language">EN</span>
+                        <span class="language">DK</span>
+                    </div>
+
+                    <a class="logo" href="index.html">leve.</a>
+
+
+                    <div class="icon_bar">
+                        <div class="search icon" alt="search bar"></div>
+                        <div class="shopping-cart-group">
+                            <div class="shop_bag icon" alt="shopping cart"></div>
+                            <p class="shop_text">
+                                <span class="shop_number_of_items">
+                                    <span>0</span> ITEMS <br> IN
+                                    YOUR BAG
+                                </span>
+                            </p>
+                        </div>
+                        <div class="user_account icon" alt="user personal account"></div>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><a href="shop_page.html">SHOP</a></li>
+                    <li><a href="collections.html">SALE</a></li>
+                    <li><a href="showroom.html">SHOWROOM</a></li>
+                    <li><a href="about_us.html">ABOUT</a></li>
+                </ul>
+
+                <div class="purple-line"></div>
+            </div>
+            <div class="desktop-hidden">
+                <section id="section-announcement" data-section-id="announcement" data-section-type="announcement-bar">
+                    <div class="AnnouncementBar-mobile">
+                        <p class="AnnouncementBar__Content-mobile">
+                            <span>FREE DELIVERY WITH PURCHASES OVER 500 DKK</span>
+                        </p>
+                    </div>
+                </section>
+
+                <div class="mobile-nav-wrap">
+                    <div class="hamburger-wrapper">
+                        <div class="hamburger-menu"></div>
+                    </div>
+                    <a class="logo-mobile" href="index.html">leve.</a>
+                    <div class="shop-wrap-mobile">
+                        <div class="shop-cart-mobile"></div>
+                        <p class="shop-text-mobile">
+                            <span class="shop_number_of_items">
+                                <span>0</span> ITEMS <br> IN
+                                YOUR BAG
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>
