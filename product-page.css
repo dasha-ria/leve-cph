@@ -435,6 +435,11 @@
     display: block;
   }
 
+  .middle-right-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
   .middle-wrap {
     justify-content: center;
     align-items: center;
