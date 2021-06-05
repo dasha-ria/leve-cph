@@ -1,6 +1,6 @@
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
 }
 
@@ -11,7 +11,7 @@ body {
 .landing_page {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 0.9fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         "photo text";
@@ -24,10 +24,13 @@ body {
     letter-spacing: 0.07em;
     text-align: center;
   font-style: normal;
-font-size: 3vw;
+font-size: 4.7rem;
 grid-area: text;
-margin-right: 5vw;
 text-transform: uppercase;
+}
+
+.button_position {
+    margin-left: calc(50% - 100px);
 }
 
 .front_picture {
@@ -35,10 +38,14 @@ text-transform: uppercase;
     grid-area: photo;
     background-image: url(img/front.webp);
     background-size: cover;
+    background-position: center;
 }
 
 .information {
     grid-area: text;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .white_button {
@@ -48,7 +55,7 @@ border: 1px solid #707070;
 padding: 15px;
 font-family: 'Quicksand', sans-serif;
 font-size: 1rem;
-width: 20vw;
+width: 200px;
 padding: 10px;
 box-shadow: 0;
 }
@@ -60,7 +67,7 @@ box-shadow: 0;
     padding: 15px;
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
-    width: 20vw;
+    width: 200px;
     padding: 10px;
     box-shadow: 0;
     color: white;
@@ -86,13 +93,19 @@ box-shadow: 0;
     float: right;
     }
 
-
     .IG_feed {
-        display: flex;
+        display: contents;
         justify-content: center;
         margin: 0 50px 0 50px;
         gap: 2vw;
+        width: 100vw;
     }
+
+.frames, .screenshots, .items {
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+}
 
     .review_one {
         background-image: url(img/review2.webp);
@@ -127,6 +140,9 @@ color: black;
 font-family: 'Quicksand', sans-serif;
 text-transform: uppercase;
 font-size: 0.5rem;
+text-align: center;
+display: flex;
+  justify-content: center;
     }
 
     .about_us_layout {
@@ -141,7 +157,7 @@ font-size: 0.5rem;
     .about_us_leve {
         grid-area: texts;
         font-family: 'Quicksand', sans-serif;
-        font-size: 1.4vw;
+        font-size: 1.4rem;
     }
 
     .image_about_us {
@@ -162,6 +178,10 @@ font-size: 0.5rem;
         padding-top: 15px;
     }
 
+    .item_choice_two {
+        width: 30vw;
+    }
+
     figure {
         margin: 0;
     }
@@ -170,7 +190,7 @@ font-size: 0.5rem;
         font-family: Didot;
 font-weight: normal;
 font-style: italic;
-font-size: 2.9vw;
+font-size: 2.7rem;
 letter-spacing: 0.01em;
 text-align: left;
 color: #000;
@@ -179,4 +199,164 @@ position: relative;
 
     .words {
         margin-top: -1.7vw;
+    }
+
+    .bump {
+        margin-top: 25px;
+        margin-left: calc(50% - 100px);
+    }
+
+@media only screen and (max-width: 1220px) {
+    .body {
+        margin: 0;
+    }
+    main {
+        margin: 0;
+    }
+    
+    .landing_page {
+        height: 85vh;
+    }
+    .headlines {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 5vh;
+    }
+    
+    .front_picture {
+        width: 100vw;
+        height: 75vh;
+    }
+
+    .down {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .response_one {
+position: absolute;
+color: white;
+bottom: 30vh;
+left: 0;
+right: 0;
+margin: auto;
+font-size: 2.4rem;
+    }
+
+    .button_position {
+        position: absolute;
+        bottom: 20vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .words {
+        font-size: 2rem;
+    }
+
+    .information {
+        display: contents;
+    }
+
+    .review_one, .review_two, .review_three {
+        height: 50vh;
+    }
+
+    .white_button {
+        border-radius: 5px;
+        background: white;
+        border: 1px solid #707070;
+        padding: 10px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 0.9rem;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0;
+        }
+        
+        .color_button {
+            font-size: 0.9rem;
+            width: 200px;
+            padding: 10px;
+            box-shadow: 0;
+            color: white;
+            }
+
+            .caption {
+                font-size: 1rem;
+            }
+
+            .about_us_text {
+                font-size: 1.1rem;
+            }
+
+            .image_about_us {
+                width: 35vw ;
+            }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .frames {
+        display: grid;
+    }
+
+    .hide {
+        display: none;
+    }
+        .body {
+            margin: 0;
+        }
+        main {
+            margin: 0;
+        }
+        
+        .landing_page, .second_page {
+            height: 80vh;
+        }
+        .headlines {
+        font-size: 1rem;
+        }
+        
+        .down {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: white;
+        }
+
+        .front_picture {
+            height: 80vh;
+        }
+    
+                .caption {
+                    font-size: 0.5rem;
+                }
+                .about_us_text {
+                    font-size: 0.8rem;
+                    width: 75vw;
+                }
+
+                .about_us_layout {
+                    display: inline-block;
+                    margin: 0;
+                }
+
+                .image_about_us {
+                    width: 75vw;
+                }
+
+                .about_us_leve {
+                    text-align-last: center;
+                }
+
+                .bump {
+                    margin-left: 0;
+                }
     }
