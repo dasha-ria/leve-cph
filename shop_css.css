@@ -48,6 +48,12 @@ p {
   column-gap: 2vw;
 }
 
+#filterText {
+  display: none;
+  text-align: right;
+  cursor: pointer;
+}
+
 .filter {
   grid-area: side;
   display: flex;
@@ -117,14 +123,21 @@ article img {
 
 .boxy {
   height: 2.3vw;
-  width: 2.3vw;
-  padding-top: 0.5vw;
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
+  width: 2.8vw;
   border-style: solid;
-  border-color: #000000;
+  border-color: #f5f5f5;
+  color: #f5f5f5;
+  font-weight: 500;
   text-align: center;
-  justify-items: center;
+  border-radius: 10%;
+  padding-top: 0.5vw;
+}
+
+.shade {
+  border-style: solid;
+  border-color: #707070;
+  color: #707070;
+  opacity: 50%;
 }
 
 .name {
@@ -132,16 +145,6 @@ article img {
   margin-bottom: -0.5vw;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.square {
-  height: 2vw;
-  width: 2vw;
-  border-style: ridge;
-  border-color: black;
-  border-width: 0.15vw;
-  border-radius: 20%;
-  cursor: pointer;
 }
 
 .block {
@@ -168,4 +171,77 @@ button:hover {
 
 label:hover {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 739px) {
+  p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2vw;
+    max-width: 45vw;
+    -webkit-text-stroke: #707070;
+    letter-spacing: 2px;
+  }
+  header {
+    display: none;
+  }
+
+  .headlines {
+    font-size: 6vw;
+    margin-bottom: -2vw;
+    margin-top: 3vw;
+  }
+
+  .instead {
+    margin-top: -4vw;
+  }
+
+  .gone {
+    display: none;
+  }
+
+  .list h4 {
+    font-size: 3vw;
+  }
+
+  .filter {
+    position: absolute;
+    left: 55vw;
+    margin-top: 6vw;
+    background-color: white;
+    padding: 3vw 100% 5vw 7vw;
+    width: 30vw;
+  }
+
+  .filter h4 {
+    font-size: 3vw;
+  }
+
+  .filter label {
+    font-size: 2.2vw;
+  }
+
+  .filter span {
+    margin-top: 1vw;
+  }
+
+  #filterText {
+    display: unset;
+    position: relative;
+    right: -80vw;
+    cursor: pointer;
+    font-size: 3vw;
+  }
+
+  .list {
+    grid-template-columns: max-content max-content;
+    margin-top: 6vw;
+    margin-left: -10vw;
+    column-gap: 3vw;
+    row-gap: 7vw;
+  }
+
+  article img {
+    width: 38vw;
+    height: auto;
+  }
 }

@@ -54,19 +54,40 @@ function showProduct(product) {
   h4El.textContent = product.name;
   h4El.classList.add("capi");
   copy.querySelector(".price").textContent = `${product.price} DKK`;
-  if (product.sale) {
+  if (product.sale == true) {
     copy.querySelector(".price").textContent = `${product.price} DKK`;
     copy.querySelector(".price").classList.add("underline");
     copy.querySelector(".discount").textContent = `${product.sale_price} DKK`;
+  }
+  if (product.XXS == "<0") {
+    copy.querySelector("#box_XXS").classList.add("shade");
+  }
+  if (product.XS == "<0") {
+    copy.querySelector("#box_XS").classList.add("shade");
+  }
+  if (product.S == "<0") {
+    copy.querySelector("#box_S").classList.add("shade");
+  }
+  if (product.M == "<0") {
+    copy.querySelector("#box_M").classList.add("shade");
+  }
+  if (product.L == "<0") {
+    copy.querySelector("#box_L").classList.add("shade");
   }
   const parent = document.querySelector(".list");
   parent.appendChild(copy);
 }
 
+document.querySelector("#filterText").addEventListener("click", dropFilter);
 document.querySelector("#filter1").addEventListener("click", dropDown1);
 document.querySelector("#filter2").addEventListener("click", dropDown2);
 document.querySelector("#filter3").addEventListener("click", dropDown3);
 document.querySelector("#filter4").addEventListener("click", dropDown4);
+
+function dropFilter() {
+  console.log("function dropFilter()");
+  document.querySelector(".filter").classList.toggle("gone");
+}
 
 function dropDown1() {
   console.log("function dropDown1()");
@@ -131,6 +152,29 @@ function filterCategories() {
     if (e.checked === true) {
       array.push({
         category: `${e.dataset.category}`,
+      });
+    }
+  });
+
+  filter(JSON.stringify(array));
+}
+
+const sizeMCheckbox = document
+  .querySelector("#sizes")
+  .querySelectorAll(`[type="checkbox"]`);
+sizeMCheckbox.forEach((e) => {
+  e.onclick = () => {
+    filterSizeM();
+  };
+});
+
+function filterSizeM() {
+  let array = [];
+
+  sizeMCheckbox.forEach((e) => {
+    if (e.checked === true) {
+      array.push({
+        M: `${e.dataset.category}`,
       });
     }
   });

@@ -16,9 +16,10 @@
       <div id="nav-placeholder"></div>
     </header>
     <main>
-      <h3>SHOP</h3>
+      <h3 class="headlines">SHOP</h3>
+      <div id="filterText">+ FILTER</div>
       <section class="instead">
-        <div class="filter">
+        <div class="filter gone">
           <h4>
             sort price
             <span id="filter1">+</span>
@@ -204,7 +205,15 @@
                 <label> <button id="XXS" class="btn_filter"> </button> XXS</label>
                 <label> <button id="XS" class="btn_filter"> </button> XS</label>
                 <label> <button id="S" class="btn_filter"> </button> S</label>
-                <label> <button id="M" class="btn_filter"> </button> M</label>
+                <div>
+                  <input
+                    type="checkbox"
+                    data-category=">0"
+                    id="M"
+                    name="M"
+                  />
+                  <label for="M">M</label>
+                </div>
                 <label> <button id="L" class="btn_filter"> </button> L</label>
             </span>
           </div>
@@ -213,9 +222,9 @@
           <template id="theList">
             <article>
               <a href="product-page.html">
-                <img src="images/Siri_recycled_blue-front.webp" />
+                <img src="images/Siri_recycled_blue-front.webp" loading="lazy" />
               </a>
-              <lebel class="disappear"><span class="row_show">
+              <lebel id="allSize"><span class="row_show">
                   <div id="box_XXS" class="boxy">XXS</div>
                   <div id="box_XS" class="boxy">XS</div>
                   <div id="box_S" class="boxy">S</div>
