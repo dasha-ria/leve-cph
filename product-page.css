@@ -228,8 +228,8 @@
 }
 
 .suggestion-pic {
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   object-fit: cover;
 }
 
@@ -508,8 +508,8 @@
   }
 
   .suggestion-pic {
-    width: 30vw;
-    height: 30vw;
+    width: 28vw;
+    height: 28vw;
   }
   .button-flex {
     display: flex;
