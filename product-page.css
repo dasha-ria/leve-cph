@@ -446,6 +446,11 @@
     gap: 0;
   }
 }
+
+.disappear {
+  display: none;
+}
+
 @media only screen and (min-width: 480px) {
   .desktop-hidden-product {
     display: none;
