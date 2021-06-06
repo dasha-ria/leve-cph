@@ -253,7 +253,7 @@ nav li:hover {
 }
 
 @media only screen and (min-width: 600px) {
-  .desktop-hidden {
+  .desktop-hidden-menu {
     display: none;
   }
 
