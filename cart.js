@@ -1,7 +1,7 @@
 function addProduct() {
   const allNum = document.querySelector(".product-quantity");
   const plusBtn = document.querySelector(".plus");
-  const productPrice = document.querySelector("#product-price-span");
+  const productPrice = document.querySelector(".product-price-span");
 
   plusBtn.onclick = () => {
     const add = Number(allNum.innerText) + 1;
@@ -10,6 +10,8 @@ function addProduct() {
       (Number(productPrice.innerText) / (Number(allNum.innerText) - 1)) *
       Number(allNum.innerText);
     productPrice.innerText = multiplyPrice;
+
+    calculateTotal();
   };
 }
 
@@ -18,7 +20,7 @@ addProduct();
 function minusProduct() {
   const allNum = document.querySelector(".product-quantity");
   const minusBtn = document.querySelector(".minus");
-  const productPrice = document.querySelector("#product-price-span");
+  const productPrice = document.querySelector(".product-price-span");
 
   minusBtn.onclick = () => {
     if (allNum.innerText > 1) {
@@ -28,6 +30,8 @@ function minusProduct() {
         (Number(productPrice.innerText) / (Number(allNum.innerText) + 1)) *
         Number(allNum.innerText);
       productPrice.innerText = dividePrice;
+
+      calculateTotal();
     }
   };
 }
@@ -43,11 +47,23 @@ function removeProduct() {
 }
 removeProduct();
 
-function itemTotal() {
-  const productPrice = document.querySelector("#product-price-span");
-  console.log(productPrice.innerText);
+function calculateTotal() {
+  const newproductPrice = document.querySelector(
+    ".product-price-span"
+  ).textContent;
+  const totalCost = document.querySelector(".totalcost-span");
+  const discount = document.querySelector(".discount-span");
+  const shipping = document.querySelector(".shipping-span");
+  const grandTotal = document.querySelector(".grandtotal-span");
+
+  totalCost.textContent = newproductPrice;
+  grandTotal.innerText =
+    Number(totalCost.innerText) +
+    Number(discount.innerText) +
+    Number(shipping.innerText);
 }
-itemTotal();
+
+calculateTotal();
 
 // function addProduct() {
 //   let plusbutton = document.querySelector(".plus");
