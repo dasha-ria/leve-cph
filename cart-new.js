@@ -88,6 +88,10 @@ const CART = {
         cartContent.appendChild(cartCopy);
       });
       document.querySelector(".totalcost-span").innerText = sum;
+      const grandTotal = document.querySelector(".grandtotal-span");
+      //   const discount = document.querySelector(".discount-span");
+      const shipping = document.querySelector(".shipping-span");
+      grandTotal.innerText = sum + Number(shipping.innerText);
     }
   },
 
@@ -127,9 +131,9 @@ const CART = {
   },
 
   minusOne(id) {
-    const productQty = document.querySelector(".product-quantity");
+    const productQty = CART.contents.find((element) => element._id == id).qty;
 
-    if (productQty.innerText > 1) {
+    if (productQty > 1) {
       const indexObj = CART.contents.find((element) => element._id == id);
       indexObj.qty--;
       console.log(indexObj);
