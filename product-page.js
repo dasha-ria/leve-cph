@@ -1,3 +1,57 @@
+const CART = {
+  KEY: "basket",
+  contents: [],
+  init() {
+    let _contents = localStorage.getItem(CART.KEY);
+    if (_contents) {
+      CART.contents = JSON.parse(_contents);
+    } else {
+      CART.contents = [
+        {
+          _id: 284,
+          qty: 3,
+          name: "Ulrikke",
+          price: 499,
+        },
+      ];
+    }
+    CART.sync();
+  },
+
+  sync() {
+    let _cart = JSON.stringify(CART.contents);
+    localStorage.setItem(CART.KEY, _cart);
+  },
+
+  add(obj) {
+    const index = CART.contents.findIndex((element) => element._id == obj._id);
+    if (index == -1) {
+      console.log(obj);
+      obj.qty = 1;
+      console.log(CART.contents);
+      CART.contents.push(obj);
+    } else {
+      CART.contents[index].qty += 1;
+    }
+
+    console.log(CART.contents);
+    this.sync();
+  },
+  update(obj) {
+    const index = CART.contents.findIndex((element) => element._id == obj._id);
+    if (obj.qty === 0) {
+      CART.contents.splice(index, 1);
+    } else {
+      CART.contents[index].qty = obj.qty;
+    }
+    CART.sync();
+  },
+};
+
+CART.init();
+
+const addCart = document.querySelector(".add-cart");
+
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
 
@@ -40,6 +94,15 @@ function listProducts(data) {
   showProduct(data);
   sizefitToggle(data);
   compositionToggle(data);
+
+  addCart.onclick = () => {
+    CART.add({
+      _id: data._id,
+      name: data.name,
+      price: data.price,
+      product_img_front: data.product_img_front,
+    });
+  };
 }
 
 function showProduct(product) {
