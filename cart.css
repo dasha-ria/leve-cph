@@ -31,7 +31,7 @@ body {
 }
 .cart-group-text-wrap {
   display: flex;
-  gap: 50px;
+  gap: 80px;
   margin-left: 130px;
 }
 
@@ -63,6 +63,8 @@ body {
 .first-product-info {
   display: flex;
   gap: 100px;
+  align-items: flex-start;
+  margin-top: 1vw;
 }
 
 .first-pic {
@@ -73,10 +75,24 @@ body {
 .product-name {
   font-size: 1rem;
   font-weight: 600;
+  margin: 0;
 }
 
 .product-quantity-size {
   font-size: 1rem;
+  margin: 0;
+}
+
+.plus-minus {
+  font-size: 1.3rem;
+  margin: 0;
+  line-height: 0.8;
+}
+
+.sizing-div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .entire-summary-section {
