@@ -1,362 +1,365 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
 }
 
 .main {
-    margin-top: 250px;
+  margin-top: 250px;
 }
 
 .landing_page {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 0.9fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "photo text";
-    height: calc(100vh - 225px);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "photo text";
+  height: calc(100vh - 225px);
 }
 
 .headlines {
-    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
-    font-weight: normal;
-    letter-spacing: 0.07em;
-    text-align: center;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 0.07em;
+  text-align: center;
   font-style: normal;
-font-size: 4.7rem;
-grid-area: text;
-text-transform: uppercase;
+  font-size: 4.7rem;
+  grid-area: text;
+  text-transform: uppercase;
 }
 
 .button_position {
-    margin-left: calc(50% - 100px);
+  margin-left: calc(50% - 100px);
 }
 
 .front_picture {
-    width: 65vw;
-    grid-area: photo;
-    background-image: url(img/front.webp);
-    background-size: cover;
-    background-position: center;
+  width: 65vw;
+  grid-area: photo;
+  background-image: url(img/front.webp);
+  background-size: cover;
+  background-position: center;
 }
 
 .information {
-    grid-area: text;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+  grid-area: text;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .white_button {
-border-radius: 5px;
-background: white;
-border: 1px solid #707070;
-padding: 15px;
-font-family: 'Quicksand', sans-serif;
-font-size: 1rem;
-width: 200px;
-padding: 10px;
-box-shadow: 0;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid #707070;
+  padding: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0;
 }
 
 .color_button {
+  border-radius: 5px;
+  background: #b0acc3;
+  border: 1px solid #b0acc3;
+  padding: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0;
+  color: white;
+}
+
+.down {
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  top: 93vh;
+  left: 80%;
+  margin: auto;
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: large;
+}
+
+.buttoncol {
+  position: relative;
+  float: right;
+}
+
+.IG_feed {
+  display: contents;
+  justify-content: center;
+  margin: 0 50px 0 50px;
+  gap: 2vw;
+  width: 100vw;
+}
+
+.frames,
+.screenshots,
+.items {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.review_one {
+  background-image: url(img/review2.webp);
+  background-size: cover;
+  width: 50%;
+  height: 50vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.review_two {
+  background-image: url(img/review1.webp);
+  background-size: cover;
+  width: 50%;
+  height: 50vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.review_three {
+  background-image: url(img/review3.webp);
+  background-size: cover;
+  width: 50%;
+  height: 50vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.caption {
+  text-decoration: none;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about_us_layout {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "texts photos";
+  margin: 0 50px 0 50px;
+}
+
+.about_us_leve {
+  grid-area: texts;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+}
+
+.image_about_us {
+  grid-area: photos;
+  width: 25vw;
+}
+
+.colored {
+  width: 20vw;
+}
+
+.your_choice {
+  margin: 0 50px 0 50px;
+}
+
+.item_choice {
+  width: 30vw;
+  padding-top: 15px;
+}
+
+.item_choice_two {
+  width: 30vw;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-family: Didot;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 2.7rem;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #000;
+  position: relative;
+}
+
+.words {
+  margin-top: -1.7vw;
+}
+
+.bump {
+  margin-top: 25px;
+  margin-left: calc(50% - 100px);
+}
+
+@media only screen and (max-width: 1220px) {
+  .body {
+    margin: 0;
+  }
+  main {
+    margin: 0;
+  }
+
+  .landing_page {
+    height: 85vh;
+  }
+  .headlines {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 5vh;
+  }
+
+  .front_picture {
+    width: 100vw;
+    height: 75vh;
+  }
+
+  .down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .response_one {
+    position: absolute;
+    color: white;
+    bottom: 30vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 2.4rem;
+  }
+
+  .button_position {
+    position: absolute;
+    bottom: 20vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .words {
+    font-size: 2rem;
+  }
+
+  .information {
+    display: contents;
+  }
+
+  .review_one,
+  .review_two,
+  .review_three {
+    height: 50vh;
+  }
+
+  .white_button {
     border-radius: 5px;
-    background: #B0ACC3;;
-    border: 1px solid #B0ACC3;
-    padding: 15px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
+    background: white;
+    border: 1px solid #707070;
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0;
+  }
+
+  .color_button {
+    font-size: 0.9rem;
     width: 200px;
     padding: 10px;
     box-shadow: 0;
     color: white;
-    }
+  }
 
-.down {
-    font-family: 'Quicksand', sans-serif;
-    position: absolute;
-    top: 93vh;
-    left: 80%;
-    margin: auto;
-    display:block;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      border: 1px solid transparent;
-      background-color: transparent;
-      font-size: large;
-    }
-    
-    .buttoncol {
-    position: relative;
-    float: right;
-    }
+  .caption {
+    font-size: 1rem;
+  }
 
-    .IG_feed {
-        display: contents;
-        justify-content: center;
-        margin: 0 50px 0 50px;
-        gap: 2vw;
-        width: 100vw;
-    }
+  .about_us_text {
+    font-size: 1.1rem;
+  }
 
-.frames, .screenshots, .items {
-    display: flex;
-    gap: 2vw;
-    justify-content: center;
+  .image_about_us {
+    width: 35vw;
+  }
 }
-
-    .review_one {
-        background-image: url(img/review2.webp);
-    background-size: cover;
-    width: 50%;
-        height: 50vh;
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-
-    .review_two {
-        background-image: url(img/review1.webp);
-    background-size: cover;
-    width: 50%;
-        height: 50vh;
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-
-    .review_three {
-    background-image: url(img/review3.webp);
-    background-size: cover;
-    width: 50%;
-    height: 50vh;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    }
-
-    .caption {
-text-decoration: none;
-color: black;
-font-family: 'Quicksand', sans-serif;
-text-transform: uppercase;
-font-size: 0.5rem;
-text-align: center;
-display: flex;
-  justify-content: center;
-    }
-
-    .about_us_layout {
-        display: grid;
-        grid-template-columns: 1fr 0.3fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "texts photos";
-        margin: 0 50px 0 50px;
-    }
-
-    .about_us_leve {
-        grid-area: texts;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 1.4rem;
-    }
-
-    .image_about_us {
-        grid-area: photos;
-        width: 25vw;
-    }
-
-    .colored {
-        width: 20vw;
-    }
-
-    .your_choice {
-        margin: 0 50px 0 50px;
-    }
-
-    .item_choice {
-        width: 30vw;
-        padding-top: 15px;
-    }
-
-    .item_choice_two {
-        width: 30vw;
-    }
-
-    figure {
-        margin: 0;
-    }
-
-    figcaption {
-        font-family: Didot;
-font-weight: normal;
-font-style: italic;
-font-size: 2.7rem;
-letter-spacing: 0.01em;
-text-align: left;
-color: #000;
-position: relative;
-    }
-
-    .words {
-        margin-top: -1.7vw;
-    }
-
-    .bump {
-        margin-top: 25px;
-        margin-left: calc(50% - 100px);
-    }
-
-@media only screen and (max-width: 1220px) {
-    .body {
-        margin: 0;
-    }
-    main {
-        margin: 0;
-    }
-    
-    .landing_page {
-        height: 85vh;
-    }
-    .headlines {
-    font-size: 3rem;
-    margin: 0;
-    margin-top: 5vh;
-    }
-    
-    .front_picture {
-        width: 100vw;
-        height: 75vh;
-    }
-
-    .down {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .response_one {
-position: absolute;
-color: white;
-bottom: 30vh;
-left: 0;
-right: 0;
-margin: auto;
-font-size: 2.4rem;
-    }
-
-    .button_position {
-        position: absolute;
-        bottom: 20vh;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .words {
-        font-size: 2rem;
-    }
-
-    .information {
-        display: contents;
-    }
-
-    .review_one, .review_two, .review_three {
-        height: 50vh;
-    }
-
-    .white_button {
-        border-radius: 5px;
-        background: white;
-        border: 1px solid #707070;
-        padding: 10px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 0.9rem;
-        width: 200px;
-        padding: 10px;
-        box-shadow: 0;
-        }
-        
-        .color_button {
-            font-size: 0.9rem;
-            width: 200px;
-            padding: 10px;
-            box-shadow: 0;
-            color: white;
-            }
-
-            .caption {
-                font-size: 1rem;
-            }
-
-            .about_us_text {
-                font-size: 1.1rem;
-            }
-
-            .image_about_us {
-                width: 35vw ;
-            }
-}
-
 
 @media only screen and (max-width: 700px) {
-    .frames {
-        display: grid;
-    }
+  .frames {
+    display: grid;
+  }
 
-    .hide {
-        display: none;
-    }
-        .body {
-            margin: 0;
-        }
-        main {
-            margin: 0;
-        }
-        
-        .landing_page, .second_page {
-            height: 80vh;
-        }
-        .headlines {
-        font-size: 1rem;
-        }
-        
-        .down {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            color: white;
-        }
+  .hide {
+    display: none;
+  }
+  .body {
+    margin: 0;
+  }
+  main {
+    margin: 0;
+  }
 
-        .front_picture {
-            height: 80vh;
-        }
-    
-                .caption {
-                    font-size: 0.5rem;
-                }
-                .about_us_text {
-                    font-size: 0.8rem;
-                    width: 75vw;
-                }
+  .landing_page,
+  .second_page {
+    height: 80vh;
+  }
+  .headlines {
+    font-size: 1rem;
+  }
 
-                .about_us_layout {
-                    display: inline-block;
-                    margin: 0;
-                }
+  .down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+  }
 
-                .image_about_us {
-                    width: 75vw;
-                }
+  .front_picture {
+    height: 80vh;
+  }
 
-                .about_us_leve {
-                    text-align-last: center;
-                }
+  .caption {
+    font-size: 0.5rem;
+  }
+  .about_us_text {
+    font-size: 0.8rem;
+    width: 75vw;
+  }
 
-                .bump {
-                    margin-left: 0;
-                }
-    }
+  .about_us_layout {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .image_about_us {
+    width: 75vw;
+  }
+
+  .about_us_leve {
+    text-align-last: center;
+  }
+
+  .bump {
+    margin-left: 0;
+  }
+}

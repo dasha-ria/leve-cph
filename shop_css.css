@@ -109,8 +109,48 @@ article {
 }
 
 article img {
+  display: block;
   width: 22vw;
   height: auto;
+}
+
+.img_container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.42) 0%,
+    rgba(2, 2, 2, 0.75) 2.96%,
+    rgba(84, 84, 84, 0) 100%
+  );
+}
+
+.img_container:hover .overlay {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.allSize {
+  color: white;
+  position: absolute;
+  top: 101%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .row_show {
@@ -123,7 +163,7 @@ article img {
 
 .boxy {
   height: 2.3vw;
-  width: 2.8vw;
+  width: 3vw;
   border-style: solid;
   border-color: #f5f5f5;
   color: #f5f5f5;
@@ -193,6 +233,7 @@ label:hover {
 
   .instead {
     margin-top: -4vw;
+    text-align: left;
   }
 
   .gone {
@@ -205,15 +246,16 @@ label:hover {
 
   .filter {
     position: absolute;
-    left: 55vw;
+    left: 53%;
     margin-top: 6vw;
     background-color: white;
-    padding: 3vw 100% 5vw 7vw;
-    width: 30vw;
+    padding: 2vw 16.5vw 5vw 7vw;
+    z-index: 3;
   }
 
   .filter h4 {
     font-size: 3vw;
+    width: 16vw;
   }
 
   .filter label {
@@ -222,6 +264,21 @@ label:hover {
 
   .filter span {
     margin-top: 1vw;
+  }
+
+  .allSize {
+    top: 95%;
+  }
+
+  .row_show {
+    column-gap: 1vw;
+  }
+
+  .boxy {
+    height: 3.9vw;
+    width: 4.9vw;
+    font-size: 2vw;
+    padding-top: 0.7vw;
   }
 
   #filterText {

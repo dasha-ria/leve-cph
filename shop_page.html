@@ -202,9 +202,33 @@
           </h4>
           <div class="size disappear">
             <span id="sizes">
-                <label> <button id="XXS" class="btn_filter"> </button> XXS</label>
-                <label> <button id="XS" class="btn_filter"> </button> XS</label>
-                <label> <button id="S" class="btn_filter"> </button> S</label>
+              <div>
+                <input
+                  type="checkbox"
+                  data-category=">0"
+                  id="XSS"
+                  name="XSS"
+                />
+                <label for="XSS">XSS</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  data-category=">0"
+                  id="XS"
+                  name="XS"
+                />
+                <label for="XS">XS</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  data-category=">0"
+                  id="S"
+                  name="S"
+                />
+                <label for="S">S</label>
+              </div>
                 <div>
                   <input
                     type="checkbox"
@@ -214,23 +238,35 @@
                   />
                   <label for="M">M</label>
                 </div>
-                <label> <button id="L" class="btn_filter"> </button> L</label>
+                <div>
+                  <input
+                    type="checkbox"
+                    data-category=">0"
+                    id="L"
+                    name="L"
+                  />
+                  <label for="L">L</label>
+                </div>
             </span>
           </div>
         </div>
           <div class="list"></div>
           <template id="theList">
             <article>
+              <div class="img_container">
               <a href="product-page.html">
                 <img src="images/Siri_recycled_blue-front.webp" loading="lazy" />
               </a>
-              <lebel id="allSize"><span class="row_show">
+              <div class="overlay">
+                <div class="allSize"><span class="row_show">
                   <div id="box_XXS" class="boxy">XXS</div>
                   <div id="box_XS" class="boxy">XS</div>
                   <div id="box_S" class="boxy">S</div>
                   <div id="box_M" class="boxy">M</div>
                   <div id="box_L" class="boxy">L</div>
-              </span></lebel>
+              </span></div>
+              </div>
+              </div>
               <h4 class="name">ULRIKKE</h4>
               <p>
               <span class="price">399</span>
