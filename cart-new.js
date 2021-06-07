@@ -31,6 +31,9 @@ const CART = {
 
     if (CART.contents.length === 0) {
       cartContent.innerHTML = "<p>Cart is empty.</p>";
+      document.querySelector(".totalcost-span").innerText = 0;
+      document.querySelector(".shipping-span").innerText = 0;
+      document.querySelector(".grandtotal-span").innerText = 0;
     } else {
       let sum = 0;
       CART.contents.forEach((element) => {
