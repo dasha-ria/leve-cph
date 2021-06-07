@@ -87,6 +87,7 @@ body {
 
 .remove-product {
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 .product-quantity-size {
