@@ -4,6 +4,11 @@ body {
   margin: 0;
 }
 
+header {
+  z-index: 100000;
+  width: 100%;
+}
+
 .main {
   margin-top: 250px;
 }
@@ -46,6 +51,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
 }
 
 .white_button {
@@ -238,29 +244,20 @@ figcaption {
   }
 
   .response_one {
-    position: absolute;
     color: white;
-    bottom: 30vh;
-    left: 0;
-    right: 0;
-    margin: auto;
     font-size: 2.4rem;
-  }
-
-  .button_position {
-    position: absolute;
-    bottom: 20vh;
-    left: 0;
-    right: 0;
-    margin: auto;
   }
 
   .words {
     font-size: 2rem;
   }
 
+  .landing_page {
+    display: inline-block;
+  }
+
   .information {
-    display: contents;
+    display: none;
   }
 
   .review_one,
@@ -279,6 +276,26 @@ figcaption {
     width: 200px;
     padding: 10px;
     box-shadow: 0;
+  }
+
+  .color_button {
+    font-size: 0.9rem;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0;
+    color: white;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+
+  .about_us_text {
+    font-size: 1.1rem;
+  }
+
+  .image_about_us {
+    width: 35vw;
   }
 
   .color_button {
@@ -319,7 +336,7 @@ figcaption {
 
   .landing_page,
   .second_page {
-    height: 80vh;
+    height: 83vh;
   }
   .headlines {
     font-size: 1rem;
@@ -335,7 +352,8 @@ figcaption {
   }
 
   .front_picture {
-    height: 80vh;
+    height: 85vh;
+    margin-top: -15px;
   }
 
   .caption {

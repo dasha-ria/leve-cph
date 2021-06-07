@@ -32,7 +32,7 @@ body {
 .cart-group-text-wrap {
   display: flex;
   gap: 7vw;
-  margin-left: 130px;
+  margin-left: 150px;
 }
 
 .cart-group-text {
@@ -50,14 +50,15 @@ body {
 .first-product-div {
   display: flex;
   flex-direction: column;
-  background-color: #b0acc318;
+  /* background-color: #b0acc318; */
   gap: 0;
 }
 
 .first-product-wrap {
   display: flex;
   gap: 60px;
-  background-color: #b0acc318;
+  /* background-color: #b0acc318; */
+  margin-bottom: 2vw;
 }
 
 .second-product-wrap {
@@ -74,7 +75,7 @@ body {
 }
 
 .first-pic {
-  width: 70px;
+  width: 6vw;
   height: auto;
 }
 

@@ -5,9 +5,26 @@
 }
 
 .hidden {
-  visibility: hidden;
-  opacity: 0%;
+  display: none;
 }
+
+#navbar {
+  z-index: 2;
+  background-size: cover;
+}
+
+.color_button {
+  border-radius: 5px;
+  background: #B0ACC3;;
+  border: 1px solid #B0ACC3;
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0;
+  color: white;
+  }
 
 /*
  * ----------------------------------------------------------------------------
@@ -36,8 +53,6 @@
  * ----------------------------------------------------------------------------
  */
 
-/* ------DARIA------- */
-
 body {
   margin: 0 auto;
 }
@@ -64,17 +79,17 @@ nav {
 }
 
 nav a,
-nav ul {
+.desktop_menu_list, .mobile_menu_list {
   list-style: none;
   text-decoration: none;
   color: black;
   padding-inline-start: 0;
 }
 
-nav ul {
+.desktop_menu_list {
   display: flex;
   flex-direction: row;
-  gap: 150px;
+  gap: 10vw;
   font-size: 1.5rem;
   justify-content: center;
 }
@@ -90,10 +105,8 @@ nav ul {
   font-size: 1.25rem;
 }
 
-.language:hover,
-nav li:hover {
-  /* border-bottom: 2px solid #b0acc3; */
-  text-decoration: underline;
+.underline:hover {
+ border-bottom: 2px solid #b0acc3;
 }
 
 .search {
@@ -102,7 +115,8 @@ nav li:hover {
 
 .search:hover {
   background-image: url(img/search-hover.png);
-  transition: transform 0.2s ease;
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
 }
 
 .shop_bag {
@@ -111,7 +125,8 @@ nav li:hover {
 
 .shop_bag:hover {
   background-image: url(img/shopping-bag-hover.png);
-  transition: transform 0.2s ease;
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
 }
 
 .user_account {
@@ -127,7 +142,8 @@ nav li:hover {
 
 .user_account:hover {
   background-image: url(img/user-hover.png);
-  transition: transform 0.2s ease;
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
 }
 
 .icon_bar {
@@ -162,7 +178,214 @@ nav li:hover {
   margin-right: 10vw;
 }
 
+
+/*
+ * ----------------------------------------------------------------------------
+ * NEWSLETTER
+ * ----------------------------------------------------------------------------
+ */
+
+ h3 {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+ }
+
+ .signuptext {
+  font-family: "Quicksand", sans-serif;
+   font-size: 0.7rem;
+   letter-spacing: 0.15em;
+   width: 350px;
+   margin: auto;
+ }
+
+ .wrapper_for_sm {
+  width: 50px;
+  border-radius: 26px 0px 0px 26px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  bottom: 35px;
+  right: 0;
+  align-content: right;
+ }
+
+ .fb {
+  background-image: url(img/facebook-logo.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+ }
+
+ .fb:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
+  background-image: url(img/facebook-logo-hover.png);
+ }
+
+ .ig {
+  background-image: url(img/instagram-logo.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+ }
+
+ .ig:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
+  background-image: url(img/instagram-logo-hover.png);
+ }
+
+ #newsletter {
+  background-color: transparent;
+  width: 50px;
+  height: 22px;
+  background-image: url(img/love-letter.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  border: none;
+ }
+
+ #newsletter:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
+  background-image: url(img/love-letter-hover.png);
+ }
+
+/* Full-width input fields */
+input[type=text] {
+  width: 60%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+
+.signupbtn {
+  float: center;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 6; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 500px; 
+  height: 450px; 
+  overflow: hidden;
+  padding-top: 250px;
+  margin-left: 0;
+  padding-left: 30vw;
+  text-align-last: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  border: none;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #b0acc3;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media only screen and (max-width: 600px) {
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 350px; 
+    height: 450px; 
+    overflow: hidden;
+    padding-top: 50px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align-last: center;
+  }
+
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .signuptext {
+    font-family: "Quicksand", sans-serif;
+     font-size: 0.5rem;
+     width: 250px;
+     margin: 0;
+   }
+  
+   h3 {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+   }
+
+ .AnnouncementBar__Content-mobile {
+   font-size: 0.9rem;
+ }
+ 
   .mobile-hidden-menu {
     display: none;
   }
@@ -186,11 +409,73 @@ nav li:hover {
   .hamburger-menu {
     background-image: url(img/ham.png);
     width: 30px;
-    height: 25px;
+    height: 22px;
     background-repeat: no-repeat;
     background-size: 100%;
   }
 
+  .mobile_menu_list {
+  display: grid;
+  font-size: 1.5rem;
+  gap: 30px;
+  width: 100vw;
+  text-align: center;
+  }
+
+ .search_field {
+   display: inline-flex;
+  margin: 0 auto;
+  gap: 10px;
+ }
+
+ textarea:focus, input:focus{
+    outline: none;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  .showClose {
+    background-image: url(img/ham-close.png);
+}
+
+.showNav {
+    transform: translateY(0);
+}
+
+.navigation_menu {
+  background-color: white;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  margin-left: -30px;
+  z-index: 5;
+  margin-top: 50px;
+}
+  input {
+    font-family: "Quicksand", sans-serif;
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    border: solid white 1px;
+    }
+    
+    ::-webkit-input-placeholder { /* Edge */
+        color: rgb(137, 137, 137);
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgb(137, 137, 137);
+      }
+      
+      ::placeholder {
+        color:rgb(213, 213, 213);
+      }
+  
   .logo-mobile {
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
       "Times New Roman", serif;
@@ -214,6 +499,11 @@ nav li:hover {
     height: 30px;
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+
+  .shop-cart-mobile:hover {
+    background-image: url(img/shopping-bag-hover.png);
+    transition: transform 0.2s ease;
   }
 
   .shop-text-mobile {
@@ -264,4 +554,15 @@ nav li:hover {
   .shop_text {
     font-size: 0.8rem;
   }
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+button a:hover {
+  color: black;
 }

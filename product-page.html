@@ -130,13 +130,17 @@
       <img src="daria-pics/suggestion-3.webp" class="suggestion-pic" />
     </div>
   </main>
+  <div id="footer-placeholder"></div>
 
-  <script src="product-page.js"></script>
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script>
-    $.get("navigation.html", function (data) {
+  $.get("navigation.html", function(data){
       $("#nav-placeholder").replaceWith(data);
-    });
+  });
+
+  $.get("footer.html", function(data){
+      $("#footer-placeholder").replaceWith(data);
+  });
   </script>
 </body>
 

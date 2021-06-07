@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="navigation.css">
+<link rel="stylesheet" href="navigation.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
 
-<body>
-    <div id="navbar">
+
+<div id="navbar">
         <section id="section-announcement" data-section-id="announcement" data-section-type="announcement-bar"
             class="mobile-hidden-menu">
             <div class="AnnouncementBar">
@@ -26,12 +17,11 @@
             <div class="mobile-hidden-menu">
                 <div class="language-logo-icons-wrap">
                     <div class="switch_language">
-                        <span class="language">EN</span>
-                        <span class="language">DK</span>
+                        <span class="language underline">EN</span>
+                        <span class="language underline">DK</span>
                     </div>
 
                     <a class="logo" href="index.html">leve.</a>
-
 
                     <div class="icon_bar">
                         <div class="search icon" alt="search bar"></div>
@@ -48,11 +38,11 @@
                     </div>
                 </div>
 
-                <ul>
-                    <li><a href="shop_page.html">SHOP</a></li>
-                    <li><a href="collections.html">SALE</a></li>
-                    <li><a href="showroom.html">SHOWROOM</a></li>
-                    <li><a href="about_us.html">ABOUT</a></li>
+                <ul class="desktop_menu_list">
+                    <li><a class="underline" href="shop_page.html">SHOP</a></li>
+                    <li><a class="underline" href="collections.html">SALE</a></li>
+                    <li><a class="underline" href="showroom.html">SHOWROOM</a></li>
+                    <li><a class="underline" href="about_us.html">ABOUT</a></li>
                 </ul>
 
                 <div class="purple-line"></div>
@@ -68,7 +58,30 @@
 
                 <div class="mobile-nav-wrap">
                     <div class="hamburger-wrapper">
-                        <div class="hamburger-menu"></div>
+                        <div class="hamburger-menu">
+                            
+                        </div>
+                        <div class="hamburger-menu">
+                            <div class="navigation_menu">
+                                <ul class="mobile_menu_list">
+                                    <li><a class="underline" href="shop_page.html">SHOP</a></li>
+                                    <li><a class="underline" href="collections.html">SALE</a></li>
+                                    <li><a class="underline" href="showroom.html">SHOWROOM</a></li>
+                                    <li><a class="underline" href="about_us.html">ABOUT</a></li>
+                                    <li><a class="underline" href="#">YOUR ACCOUNT</a></li>
+                                    
+                                    <div class="search_field">
+                                    <div class="search icon mobile"></div>
+                                    <input id="search_input" type="search" name="search" placeholder="SEARCH by name, color or collection" />
+                                </div>
+                                    <div class="language-logo-icons-wrap">
+                                        <div class="switch_language_mobile">
+                                            <span class="language underline">EN</span>
+                                            <span class="language underline">DK</span>
+                                        </div>
+                                </ul>
+                                </div>
+                        </div>
                     </div>
                     <a class="logo-mobile" href="index.html">leve.</a>
                     <div class="shop-wrap-mobile">
@@ -84,6 +97,31 @@
             </div>
         </nav>
     </div>
-</body>
+<div class="wrapper_for_sm">
+    <button onclick="window.location.href='https://www.facebook.com/leve.copenhagen';" class="fb"></button>
+    <button id="newsletter" onclick="document.getElementById('id01').style.display='block'">
+    </button>
+    
+    <div id="id01" class="modal">
 
-</html>
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h3>join our mailing list</h3>
+            <p class="signuptext">SIGN UP TO RECEIVE EMAIL UPDATES ON NEW PRODUCT ANNOUNCEMENTS, GIFT IDEAS, SPECIAL PROMOTIONS, SALES AND MORE.</p>
+            <hr>
+    <input type="text" placeholder="Enter Your Email" name="email" required>
+      
+      
+            <p class="signuptext">By signing up you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+            <div class="clearfix">
+              <button type="submit" class="color_button">JOIN</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <button onclick="window.location.href='https://www.instagram.com/leve.copenhagen';" class="ig"></button>
+    </div>
+    <script src="hamburger.js"></script>

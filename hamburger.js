@@ -1,5 +1,5 @@
-var navbar = document.querySelector("#navigation")
-var ham = document.querySelector(".ham")
+var navbar = document.querySelector(".navigation_menu")
+var ham = document.querySelector(".hamburger-menu")
 
 function toggleHamburger(){
   navbar.classList.toggle("showNav")
