@@ -252,12 +252,12 @@ font-size: 2.4rem;
         font-size: 2rem;
     }
 
+    .landing_page {
+        display: inline-block;
+    }
+
     .information {
-        display: block;
-        z-index: 2;
-        position: absolute;
-        bottom: 10%;
-        left: 25%;
+        display: none;
     }
 
     .review_one, .review_two, .review_three {
@@ -312,9 +312,9 @@ font-size: 2.4rem;
         main {
             margin: 0;
         }
-        
+
         .landing_page, .second_page {
-            height: 80vh;
+            height: 83vh;
         }
         .headlines {
         font-size: 1rem;
@@ -330,7 +330,8 @@ font-size: 2.4rem;
         }
 
         .front_picture {
-            height: 80vh;
+            height: 85vh;
+            margin-top: -15px;
         }
     
                 .caption {
