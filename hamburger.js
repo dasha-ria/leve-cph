@@ -2,7 +2,7 @@ var navbar = document.querySelector(".navigation_menu")
 var ham = document.querySelector(".hamburger-menu")
 
 function toggleHamburger(){
-  navbar.classList.toggle("showNav")
+  navbar.classList.toggle("hidden")
   ham.classList.toggle("showClose")
 }
 

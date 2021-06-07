@@ -490,16 +490,11 @@ hr {
     background-image: url(img/ham-close.png);
 }
 
-.showNav {
-    transform: translateY(0);
-}
-
 .navigation_menu {
   background-color: white;
   width: 100vw;
   height: 90vh;
   overflow: hidden;
-  margin-left: -30px;
   z-index: 5;
   margin-top: 50px;
 }
