@@ -249,17 +249,22 @@ label:hover {
     left: 53%;
     margin-top: 6vw;
     background-color: white;
-    padding: 2vw 16.5vw 5vw 7vw;
+    padding: 2vw 11.2vw 5vw 7vw;
     z-index: 3;
   }
 
+  .filter div {
+    width: 22vw;
+  }
+
   .filter h4 {
-    font-size: 3vw;
-    width: 16vw;
+    font-size: 3.5vw;
+    width: 22vw;
+    margin-bottom: 1vw;
   }
 
   .filter label {
-    font-size: 2.2vw;
+    font-size: 2.6vw;
   }
 
   .filter span {
@@ -281,12 +286,18 @@ label:hover {
     padding-top: 0.7vw;
   }
 
+  #filterIcon {
+    width: 4.5vw;
+    height: auto;
+  }
+
   #filterText {
     display: unset;
     position: relative;
     right: -80vw;
     cursor: pointer;
     font-size: 3vw;
+    font-weight: 600;
   }
 
   .list {
