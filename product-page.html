@@ -18,81 +18,102 @@
   </header>
 
   <main>
-    <p class="breadcrumb">shop/ jackets/ the sea jackets</p>
+    <div class="breadcrumb">
+      <a href="shop_page.html" class="breadcrumb-text">shop</a>/<a href="#" class="breadcrumb-text"><span
+          id="breadcrumb-category">jackets</span></a>/
+      <span id="breadcrumb-name" class="breadcrumb-text-last">the sea
+    </div>
+
     <div class="body-container">
       <div class="all-wrap">
         <div class="left-middle-wrap">
           <div class="pic-group">
-            <div class="column-pics-flex mobile-hidden">
-              <img src="daria-pics/blazer-front.webp" class="column-pics-size" />
-              <img src="daria-pics/blazer-1.webp" class="column-pics-size" />
-              <img src="daria-pics/blazer-2.webp" class="column-pics-size" />
-              <img src="daria-pics/blazer-3.webp" class="column-pics-size" />
+            <div class="column-pics-flex mobile-hidden-product">
+              <img src="daria-pics/blazer-front.webp" class="column-pics-size" id="click-pic-1" />
+              <img src="daria-pics/blazer-1.webp" class="column-pics-size" id="click-pic-2" />
+              <img src="daria-pics/blazer-2.webp" class="column-pics-size" id="click-pic-3" />
+              <img src="daria-pics/blazer-3.webp" class="column-pics-size" id="click-pic-4" />
             </div>
 
-            <img src="daria-pics/blazer-front.webp" class="front-pic mobile-hidden" />
+            <img src="daria-pics/blazer-front.webp" class="front-pic mobile-hidden-product product-pic-hidden"
+              id="pic-1" />
+            <img src="daria-pics/blazer-1.webp" class="front-pic mobile-hidden-product product-pic-hidden" id="pic-2" />
+            <img src="daria-pics/blazer-2.webp" class="front-pic mobile-hidden-product product-pic-hidden" id="pic-3" />
+            <img src="daria-pics/blazer-3.webp" class="front-pic mobile-hidden-product product-pic-hidden" id="pic-4" />
           </div>
 
-          <div class="middle-wrap">
-            <h1 class="product-title">THE SEA BLAZER</h1>
+          <div class="middle-right-wrap">
+            <div class="middle-wrap">
+              <h1 class="product-title">THE SEA BLAZER</h1>
 
-            <!-- <p class="product-price">179 DKK</p> -->
+              <p class="product-price"><span id="product-price-span">179</span> DKK</p>
 
-            <div class="product-sale-wrap">
-              <p class="product-price-sale">179 DKK</p>
-              <p class="product-newprice">149 DKK</p>
+              <div class="product-sale-wrap sale-hidden">
+                <p class="product-price-sale"><span id="sale-span">179</span> DKK</p>
+                <p class="product-newprice"><span id="newprice-span">149</span> DKK</p>
+              </div>
+
+              <div class=" pic-group-mobile desktop-hidden-product">
+                <div class="arrow-pic-wrap">
+                  <div class="arrow-div">
+                    <img src="daria-pics/arrow-left.svg" class="product-arrow-left">
+                    <img src="daria-pics/arrow-right.svg" class="product-arrow-right">
+                  </div>
+                  <img src="daria-pics/blazer-front.webp" class="desktop-hidden-product front-pic-mobile "
+                    id="mobile-pic-1">
+                  <img src="daria-pics/blazer-1.webp" class="desktop-hidden-product front-pic-mobile product-pic-hidden"
+                    id="mobile-pic-2">
+                  <img src="daria-pics/blazer-2.webp" class="desktop-hidden-product front-pic-mobile product-pic-hidden"
+                    id="mobile-pic-3">
+                  <img src="daria-pics/blazer-3.webp" class="desktop-hidden-product front-pic-mobile product-pic-hidden"
+                    id="mobile-pic-4">
+                </div>
+              </div>
+
+              <div class="product-size-wrap">
+                <div class="product-size-btn">XXS</div>
+                <div class="product-size-btn-outofstock">XS</div>
+                <div class="product-size-btn-selected">S</div>
+                <div class="product-size-btn">M</div>
+                <div class="product-size-btn">L</div>
+              </div>
+
+              <div class="button-flex-mobile button-flex">
+                <a href="cart.html"><button class="white_button add-cart">add to cart</button></a>
+                <button class="color_button">buy now</button>
+              </div>
+
+              <h2 class="productinfo mobile-hidden-product inbetween-hidden">PRODUCT INFORMATION</h2>
+              <h2 class="productinfo mobile-hidden-product inbetween-hidden" id="sizeandfit">SIZE AND FIT +</h2>
+              <p class="mobile-hidden-product text-hidden inbetween-hidden" id="sizeandfit-text">Text about this</p>
+              <h2 class="productinfo mobile-hidden-product inbetween-hidden" id="composition">COMPOSITION +</h2>
+              <p class="mobile-hidden-product text-hidden inbetween-hidden" id="composition-text">Text about this</p>
             </div>
 
-            <div class="pic-group-mobile desktop-hidden">
-              <img src="daria-pics/blazer-front.webp" class="desktop-hidden front-pic-mobile">
-            </div>
 
-            <div class="product-size-wrap">
-              <div class="product-size-btn">XXS</div>
-              <div class="product-size-btn-outofstock">XS</div>
-              <div class="product-size-btn-selected">S</div>
-              <div class="product-size-btn">M</div>
-              <div class="product-size-btn">L</div>
-            </div>
+            <div class="right-wrap">
+              <h2 class="productinfo-right">PRODUCT INFORMATION</h2>
+              <div class="product-infotext-wrap">
+                <p class="product-infotext">
+                  ‘The Sea’ suite is the absolutely classic and timeless set. The idea
+                  behind the set was to create a suit that was elegant while being
+                  comfortable. A suit that follows the trend, the blazer which is
+                  oversized and the habit pants which sit straight.
+                </p>
+              </div>
 
-            <div class="button-flex-mobile button-flex">
-              <button class="white_button">add to cart</button>
-              <button class="color_button">buy now</button>
+              <h2 class="productinfo desktop-hidden-product inbetween-shown" id="sizeandfit-mobile">SIZE AND FIT +
+              </h2>
+              <p class="productinfo desktop-hidden-product inbetween-shown text-hidden" id="sizeandfit-text-mobile">
+                Text
+                about this</p>
+              <h2 class="productinfo desktop-hidden-product inbetween-shown" id="composition-mobile">COMPOSITION +
+              </h2>
+              <p class="productinfo desktop-hidden-product inbetween-shown text-hidden" id="compositiontext-mobile">
+                Text
+                about this</p>
             </div>
-
-            <h2 class="productinfo mobile-hidden inbetween-hidden">PRODUCT INFORMATION</h2>
-            <h2 class="productinfo mobile-hidden inbetween-hidden">SIZE AND FIT +</h2>
-            <h2 class="productinfo mobile-hidden inbetween-hidden">COMPOSITION +</h2>
           </div>
-        </div>
-
-
-        <div class="right-wrap">
-          <h2 class="productinfo-right">PRODUCT INFORMATION</h2>
-          <div class="product-infotext-wrap">
-            <p class="product-infotext">
-              ‘The Sea’ suite is the absolutely classic and timeless set. The idea
-              behind the set was to create a suit that was elegant while being
-              comfortable. A suit that follows the trend, the blazer which is
-              oversized and the habit pants which sit straight.
-            </p>
-
-            <p class="product-infotext">
-              The color dark blue represents stability and loyalty, in addition,
-              the color shows a satisfaction and cleanliness to the look
-            </p>
-
-            <p class="product-infotext">
-              Blazer <br />
-              - Shoulder pads <br />
-              - Single button closure <br />
-              - Oversize fit <br />
-              - Slit in the middle of the back
-            </p>
-          </div>
-
-          <h2 class="productinfo desktop-hidden inbetween-shown">SIZE AND FIT +</h2>
-          <h2 class="productinfo desktop-hidden inbetween-shown">COMPOSITION +</h2>
         </div>
       </div>
     </div>
@@ -110,6 +131,7 @@
     </div>
   </main>
 
+  <script src="product-page.js"></script>
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script>
     $.get("navigation.html", function (data) {

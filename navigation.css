@@ -174,8 +174,8 @@ nav a,
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 
@@ -543,7 +543,7 @@ hr {
 }
 
 @media only screen and (min-width: 600px) {
-  .desktop-hidden {
+  .desktop-hidden-menu {
     display: none;
   }
 

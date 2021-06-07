@@ -1,5 +1,9 @@
 const URL = "https://kea21s-6eb0.restdb.io/rest/leve-products";
 
+const state = {
+  sortBy: null,
+};
+
 load();
 
 function filter(filter_para) {
@@ -54,6 +58,9 @@ function showProduct(product) {
   h4El.textContent = product.name;
   h4El.classList.add("capi");
   copy.querySelector(".price").textContent = `${product.price} DKK`;
+  copy.querySelector(
+    ".product-link"
+  ).href = `product-page.html?id=${product._id}`;
   if (product.sale) {
     copy.querySelector(".price").textContent = `${product.price} DKK`;
     copy.querySelector(".price").classList.add("underline");
@@ -140,8 +147,18 @@ function filterCategories() {
 
 const low = document.querySelector("#LowToHigh");
 const high = document.querySelector("#HighToLow");
-low.addEventListener("click", sortLow);
-high.addEventListener("click", sortHigh);
+low.addEventListener("click", handleSortByLow);
+high.addEventListener("click", handleSortByHigh);
+
+function handleSortByLow() {
+  if (state.sortBy === "low") {
+    reload();
+    state.sortBy = null;
+  } else {
+    sortLow();
+    state.sortBy = "low";
+  }
+}
 
 function sortLow() {
   console.log("function sortLow()");
@@ -163,7 +180,17 @@ function sortLow() {
       console.error(err);
     });
 
-  low.addEventListener("click", reload);
+  // low.addEventListener("click", reload);
+}
+
+function handleSortByHigh() {
+  if (state.sortBy === "high") {
+    reload();
+    state.sortBy = null;
+  } else {
+    sortHigh();
+    state.sortBy = "high";
+  }
 }
 
 function sortHigh() {
@@ -186,7 +213,7 @@ function sortHigh() {
       console.error(err);
     });
 
-  high.addEventListener("click", reload);
+  // high.addEventListener("click", reload);
 }
 
 function reload() {
