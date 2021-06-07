@@ -71,7 +71,8 @@ body {
   margin-top: -2.5vw;
   margin-left: 7vw;
   margin-right: auto;
-  font-family: "Quicksand", sans-serif;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
   font-weight: normal;
   letter-spacing: 0.07em;
   font-style: normal;
