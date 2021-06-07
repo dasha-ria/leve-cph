@@ -158,8 +158,8 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 @media only screen and (max-width: 600px) {

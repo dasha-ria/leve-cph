@@ -24,34 +24,38 @@
             <div class="left-grid">
                 <div class="left-part-wrap">
                     <div class="cart-group-text-wrap">
-                        <p class="cart-group-text">NAME OF THE ITEM</p>
+                        <p class="cart-group-text">NAME</p>
                         <p class="cart-group-text">QUANTITY</p>
                         <p class="cart-group-text">SIZE</p>
                     </div>
 
+                    <div class="cart-content"></div>
+                    <template id="theCart">
+                        <div class="all-products-wrap">
 
+                            <div class="first-product-wrap">
+                                <img class="first-pic" src="daria-pics/blazer-front.jpg">
 
-                    <div class="all-products-wrap">
-                        <div class="first-product-wrap">
-                            <img class="first-pic" src="daria-pics/blazer-front.jpg">
+                                <div class="first-product-info">
+                                    <div>
+                                        <p class="product-name">THE SEA BLAZER</p>
+                                        <p class="product-price"><span class="product-price-span">179</span> DKK</p>
+                                        <p class="remove-product">X Remove </p>
+                                    </div>
 
-                            <div class="first-product-info">
-                                <p class="product-name">THE SEA BLAZER</p>
-                                <p class="product-quantity-size">1</p>
-                                <p class="product-quantity-size">M</p>
+                                    <div class="sizing-div">
+
+                                        <p class="minus">-</p>
+                                        <p class="product-quantity-size product-quantity">1</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                    <p class="product-quantity-size">M</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="second-product-wrap">
-                            <img class="first-pic" src="daria-pics/blazer-front.jpg">
-
-                            <div class="first-product-info">
-                                <p class="product-name">THE SEA BLAZER</p>
-                                <p class="product-quantity-size">1</p>
-                                <p class="product-quantity-size">M</p>
-                            </div>
                         </div>
-                    </div>
+                    </template>
+
 
                     <section>
 
@@ -62,22 +66,22 @@
                                 <div class="payment-total-parent">
                                     <div class="payment-total-flex">
                                         <p class="cost total">ITEM TOTAL</p>
-                                        <p class="cost total"><span>598 DKK</span></p>
+                                        <p class="cost total"><span class="totalcost-span">598</span> DKK</p>
                                     </div>
 
-                                    <div class="payment-total-flex">
+                                    <!-- <div class="payment-total-flex">
                                         <p class="cost total">DISCOUNT</p>
-                                        <p class="cost total"><span>30 DKK</span></p>
-                                    </div>
+                                        <p class="cost total"><span class="discount-span">30</span> DKK</p>
+                                    </div> -->
 
                                     <div class="payment-total-flex">
                                         <p class="cost total">SHIPPING</p>
-                                        <p class="cost total"><span>30 DKK</span></p>
+                                        <p class="cost total"><span class="shipping-span">30</span> DKK</p>
                                     </div>
 
                                     <div class="payment-total-flex">
                                         <p class="cost subtotal">SUBTOTAL</p>
-                                        <p class="cost subtotal"><span>628 DKK</span></p>
+                                        <p class="cost subtotal"><span class="grandtotal-span">628</span> DKK</p>
                                     </div>
 
                                     <p class="promo-text">ADD A PROMOTIONAL CODE</p>
@@ -175,7 +179,7 @@
         </div>
     </div>
 
-    </div>
+    <script src="cart-new.js"></script>
 </body>
 
 </html>

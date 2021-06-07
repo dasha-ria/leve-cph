@@ -58,7 +58,10 @@ function showProduct(product) {
   h4El.textContent = product.name;
   h4El.classList.add("capi");
   copy.querySelector(".price").textContent = `${product.price} DKK`;
-  if (product.sale == true) {
+  copy.querySelector(
+    ".product-link"
+  ).href = `product-page.html?id=${product._id}`;
+  if (product.sale) {
     copy.querySelector(".price").textContent = `${product.price} DKK`;
     copy.querySelector(".price").classList.add("underline");
     copy.querySelector(".discount").textContent = `${product.sale_price} DKK`;
