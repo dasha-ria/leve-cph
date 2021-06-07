@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div id="navbar">
+<div id="navbar">
         <section id="section-announcement" data-section-id="announcement" data-section-type="announcement-bar"
             class="mobile-hidden-menu">
             <div class="AnnouncementBar">
@@ -26,8 +12,8 @@
             <div class="mobile-hidden-menu">
                 <div class="language-logo-icons-wrap">
                     <div class="switch_language">
-                        <span class="language">EN</span>
-                        <span class="language">DK</span>
+                        <span class="language underline">EN</span>
+                        <span class="language underline">DK</span>
                     </div>
 
                     <a class="logo" href="index.html">leve.</a>
@@ -48,11 +34,11 @@
                     </div>
                 </div>
 
-                <ul>
-                    <li><a href="shop_page.html">SHOP</a></li>
-                    <li><a href="collections.html">SALE</a></li>
-                    <li><a href="showroom.html">SHOWROOM</a></li>
-                    <li><a href="about_us.html">ABOUT</a></li>
+                <ul class="desktop_menu_list">
+                    <li><a class="underline" href="shop_page.html">SHOP</a></li>
+                    <li><a class="underline" href="collections.html">SALE</a></li>
+                    <li><a class="underline" href="showroom.html">SHOWROOM</a></li>
+                    <li><a class="underline" href="about_us.html">ABOUT</a></li>
                 </ul>
 
                 <div class="purple-line"></div>
@@ -68,7 +54,26 @@
 
                 <div class="mobile-nav-wrap">
                     <div class="hamburger-wrapper">
-                        <div class="hamburger-menu"></div>
+                        <div class="hamburger-menu">
+                            <ul class="mobile_menu_list">
+                                <li><a class="underline" href="shop_page.html">SHOP</a></li>
+                                <li><a class="underline" href="collections.html">SALE</a></li>
+                                <li><a class="underline" href="showroom.html">SHOWROOM</a></li>
+                                <li><a class="underline" href="about_us.html">ABOUT</a></li>
+                                <li><a class="underline" href="#">YOUR ACCOUNT</a></li>
+                                
+                                <div class="search_field">
+                                <div class="search icon mobile"></div>
+                                <input id="search_input" type="search" name="search" placeholder="SEARCH by name, color or collection" />
+                            </div>
+                                <div class="language-logo-icons-wrap">
+                                    <div class="switch_language_mobile">
+                                        <span class="language underline">EN</span>
+                                        <span class="language underline">DK</span>
+                                    </div>
+                            </ul>
+                            
+                        </div>
                     </div>
                     <a class="logo-mobile" href="index.html">leve.</a>
                     <div class="shop-wrap-mobile">
@@ -84,6 +89,5 @@
             </div>
         </nav>
     </div>
-</body>
 
-</html>
+    <script src="hamburger.js"></script>

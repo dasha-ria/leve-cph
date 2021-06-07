@@ -36,8 +36,6 @@
  * ----------------------------------------------------------------------------
  */
 
-/* ------DARIA------- */
-
 body {
   margin: 0 auto;
 }
@@ -64,17 +62,17 @@ nav {
 }
 
 nav a,
-nav ul {
+.desktop_menu_list, .mobile_menu_list {
   list-style: none;
   text-decoration: none;
   color: black;
   padding-inline-start: 0;
 }
 
-nav ul {
+.desktop_menu_list {
   display: flex;
   flex-direction: row;
-  gap: 150px;
+  gap: 10vw;
   font-size: 1.5rem;
   justify-content: center;
 }
@@ -90,10 +88,8 @@ nav ul {
   font-size: 1.25rem;
 }
 
-.language:hover,
-nav li:hover {
-  /* border-bottom: 2px solid #b0acc3; */
-  text-decoration: underline;
+.underline:hover {
+ border-bottom: 2px solid #b0acc3;
 }
 
 .search {
@@ -163,6 +159,10 @@ nav li:hover {
 }
 
 @media only screen and (max-width: 600px) {
+ .AnnouncementBar__Content-mobile {
+   font-size: 0.9rem;
+ }
+ 
   .mobile-hidden-menu {
     display: none;
   }
@@ -191,6 +191,53 @@ nav li:hover {
     background-size: 100%;
   }
 
+  .mobile_menu_list {
+  display: grid;
+  font-size: 1.5rem;
+  padding-top: 75px;
+  gap: 30px;
+  width: 100vw;
+  text-align: center;
+  margin-left: -30px;
+  }
+
+ .search_field {
+   display: inline-flex;
+  margin: 0 auto;
+  gap: 10px;
+ }
+
+ textarea:focus, input:focus{
+    outline: none;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  input {
+    font-family: "Quicksand", sans-serif;
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    border: solid white 1px;
+    }
+    
+    ::-webkit-input-placeholder { /* Edge */
+        color: rgb(137, 137, 137);
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgb(137, 137, 137);
+      }
+      
+      ::placeholder {
+        color:rgb(213, 213, 213);
+      }
+  
   .logo-mobile {
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
       "Times New Roman", serif;
@@ -214,6 +261,11 @@ nav li:hover {
     height: 30px;
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+
+  .shop-cart-mobile:hover {
+    background-image: url(img/shopping-bag-hover.png);
+    transition: transform 0.2s ease;
   }
 
   .shop-text-mobile {
