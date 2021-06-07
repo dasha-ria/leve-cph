@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 
+a:hover, button:hover {
+cursor: pointer;
+}
+
 .ham {
   display: none;
 }
@@ -185,7 +189,7 @@ nav a,
  * ----------------------------------------------------------------------------
  */
 
- h3 {
+.styling_words {
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
@@ -199,6 +203,7 @@ nav a,
    letter-spacing: 0.15em;
    width: 350px;
    margin: auto;
+   padding-bottom: 15px;
  }
 
  .wrapper_for_sm {
@@ -264,7 +269,7 @@ nav a,
  }
 
 /* Full-width input fields */
-input[type=text] {
+.input_style[type=text] {
   width: 60%;
   padding: 10px;
   margin: 5px 0 15px 0;
@@ -275,7 +280,7 @@ input[type=text] {
 }
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus {
+.input_style[type=text]:focus {
   background-color: #ddd;
   outline: none;
   font-family: "Quicksand", sans-serif;
@@ -327,7 +332,7 @@ hr {
 .close {
   position: absolute;
   right: 35px;
-  top: 200px;
+  top: 250px;
   font-size: 40px;
   font-weight: bold;
   color: #b0acc3;
@@ -372,12 +377,12 @@ hr {
 
   .signuptext {
     font-family: "Quicksand", sans-serif;
-     font-size: 0.5rem;
+     font-size: 0.2rem;
      width: 250px;
-     margin: 0;
+     margin: 0 auto;
    }
   
-   h3 {
+   .styling_words {
     font-size: 1rem;
     letter-spacing: 0.1em;
    }
