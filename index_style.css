@@ -243,29 +243,21 @@ position: relative;
     }
 
     .response_one {
-position: absolute;
 color: white;
-bottom: 30vh;
-left: 0;
-right: 0;
-margin: auto;
 font-size: 2.4rem;
     }
 
-    .button_position {
-        position: absolute;
-        bottom: 20vh;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
 
     .words {
         font-size: 2rem;
     }
 
     .information {
-        display: contents;
+        display: block;
+        z-index: 2;
+        position: absolute;
+        bottom: 10%;
+        left: 25%;
     }
 
     .review_one, .review_two, .review_three {
