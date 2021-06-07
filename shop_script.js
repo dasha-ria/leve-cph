@@ -63,7 +63,7 @@ function showProduct(product) {
   ).href = `product-page.html?id=${product._id}`;
   if (product.sale) {
     copy.querySelector(".price").textContent = `${product.price} DKK`;
-    copy.querySelector(".price").classList.add("underline");
+    copy.querySelector(".price").classList.add("underline_discount");
     copy.querySelector(".discount").textContent = `${product.sale_price} DKK`;
   }
   if (product.XXS == "<0") {
