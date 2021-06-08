@@ -329,6 +329,10 @@
     object-fit: cover;
   }
 
+  .text-hidden {
+    display: none;
+  }
+
   .all-wrap {
     display: block;
   }
@@ -481,6 +485,10 @@
   .middle-right-wrap {
     display: flex;
     flex-direction: column;
+  }
+
+  .text-hidden {
+    display: none;
   }
 
   .middle-wrap {
