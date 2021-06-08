@@ -6,17 +6,6 @@ const CART = {
     this.updateDOM();
     if (_contents) {
       CART.contents = JSON.parse(_contents);
-    } else {
-      CART.contents = [
-        {
-          _id: "60b099196a5d62110000308d",
-          qty: 3,
-          name: "Espresso Skirt",
-          price: 249,
-          product_img_front:
-            "http://sandradesigns.dk/leve.images/espresso_skirt.webp",
-        },
-      ];
     }
     CART.sync();
   },
