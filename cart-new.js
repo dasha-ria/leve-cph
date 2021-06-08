@@ -94,6 +94,7 @@ const CART = {
       const grandTotal = document.querySelector(".grandtotal-span");
       //   const discount = document.querySelector(".discount-span");
       const shipping = document.querySelector(".shipping-span");
+      shipping.innerText = 30;
       grandTotal.innerText = sum + Number(shipping.innerText);
     }
   },
