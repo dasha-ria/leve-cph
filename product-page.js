@@ -136,6 +136,24 @@ function showProduct(product) {
 //   document.querySelector("#sizeandfit-text").classList.remove(".text-hidden");
 // }
 
+document.querySelector("#sizeXXS").addEventListener("click", chooseXXS);
+
+function chooseXXS() {
+  document.querySelector("#sizeXXS").classList.toggle("selected");
+}
+
+document.querySelector("#sizeXS").addEventListener("click", chooseXS);
+
+function chooseXS() {
+  document.querySelector("#sizeXS").classList.toggle("selected");
+}
+
+document.querySelector("#sizeL").addEventListener("click", chooseL);
+
+function chooseL() {
+  document.querySelector("#sizeL").classList.toggle("selected");
+}
+
 function sizefitToggle(product) {
   document.querySelector("#sizeandfit").onclick = () => {
     document.querySelector("#sizeandfit-text").classList.toggle("text-hidden");
