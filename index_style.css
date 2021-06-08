@@ -32,6 +32,7 @@ header {
   font-size: 3.3rem;
   grid-area: text;
   text-transform: uppercase;
+  margin-top: 9vw;
 }
 
 .button_position {
