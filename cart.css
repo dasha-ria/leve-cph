@@ -87,6 +87,7 @@ body {
 
 .remove-product {
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 .product-quantity-size {
@@ -98,12 +99,14 @@ body {
   font-size: 1.3rem;
   margin: 0;
   line-height: 0.8;
+  cursor: pointer;
 }
 
 .minus {
   font-size: 1.3rem;
   margin: 0;
   line-height: 0.8;
+  cursor: pointer;
 }
 
 .sizing-div {

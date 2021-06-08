@@ -29,7 +29,7 @@ header {
   letter-spacing: 0.07em;
   text-align: center;
   font-style: normal;
-  font-size: 4.7rem;
+  font-size: 3.3rem;
   grid-area: text;
   text-transform: uppercase;
 }
@@ -47,6 +47,7 @@ header {
 }
 
 .information {
+  margin-top: 50px;
   grid-area: text;
   display: block;
   margin-left: auto;
@@ -82,8 +83,8 @@ header {
 .down {
   font-family: "Quicksand", sans-serif;
   position: absolute;
-  top: 93vh;
-  left: 80%;
+  bottom: 0;
+  left: 50%;
   margin: auto;
   display: block;
   height: 40px;

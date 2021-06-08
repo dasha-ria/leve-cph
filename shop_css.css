@@ -217,13 +217,8 @@ label:hover {
   .p-class {
     font-family: "Quicksand", sans-serif;
     font-size: 2vw;
-    max-width: 45vw;
     -webkit-text-stroke: #707070;
     letter-spacing: 2px;
-  }
-
-  header {
-    display: none;
   }
 
   .title {
