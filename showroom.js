@@ -7,11 +7,13 @@ function userBooked(evt) {
   console.log(form.elements.name.value);
   console.log(form.elements.email.value);
   console.log(form.elements.tel_number.value);
+  console.log(form.elements.time.value);
 
   const payload = {
     name: form.elements.name.value,
     email: form.elements.email.value,
     tel_number: form.elements.tel_number.value,
+    visit_time: form.elements.time.value,
   };
 
   document.querySelector(".book_btn").disabled = true;
@@ -30,8 +32,15 @@ function userBooked(evt) {
       form.elements.name.value = "";
       form.elements.email.value = "";
       form.elements.tel_number.value = "";
+      form.elements.time.value = "";
     })
     .catch((err) => {
       console.error(err);
     });
+}
+
+document.querySelector("#1").addEventListener("click", choose1st);
+
+function choose1st() {
+  document.querySelector("#1").classList.add("choose_date");
 }
