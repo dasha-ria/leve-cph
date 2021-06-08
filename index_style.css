@@ -29,7 +29,7 @@ header {
   letter-spacing: 0.07em;
   text-align: center;
   font-style: normal;
-  font-size: 3.3rem;
+  font-size: 2.7rem;
   grid-area: text;
   text-transform: uppercase;
   margin-top: 9vw;
@@ -340,8 +340,10 @@ figcaption {
   .second_page {
     height: 83vh;
   }
+
   .headlines {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 6vw;
   }
 
   .down {

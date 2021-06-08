@@ -1,19 +1,10 @@
 const CART = {
-  KEY: "basket",
+  KEY: "shopbasket",
   contents: [],
   init() {
     let _contents = localStorage.getItem(CART.KEY);
     if (_contents) {
       CART.contents = JSON.parse(_contents);
-    } else {
-      CART.contents = [
-        {
-          _id: 284,
-          qty: 3,
-          name: "Ulrikke",
-          price: 499,
-        },
-      ];
     }
     CART.sync();
   },

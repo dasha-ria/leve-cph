@@ -1,5 +1,5 @@
 const CART = {
-  KEY: "basket",
+  KEY: "shopbasket",
   contents: [],
   init() {
     let _contents = localStorage.getItem(CART.KEY);
